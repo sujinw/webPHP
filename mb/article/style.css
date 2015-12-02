@@ -1,0 +1,45 @@
+body{background: #eee;color:#c16879;width:100%;margin:0px;border:0px;padding:0px;font-family:,"Adobe黑体","黑体","宋体",Arial;}a:link,a:visited{text-decoration:none; color:#369;}h1,h2,ul,li,#bg p{margin:0;padding:0;}ul,li{list-style-type:none;}
+/*标题*/
+header{position:relative;overflow:hidden;text-align:center;background-color:#454518;-webkit-box-shadow: 0 1px 1px 0px rgba(50,50,50,.2);box-shadow: 0 1px 1px 0px rgba(50,50,50,.2);}header a{position: absolute;width:45px;height:45px;top:0;left:0;float:left;}header a:after{content:'';position:absolute;top: 50%;left:20px;width:10px;height:10px;margin-top: -5px;border: #999 solid;border-width: 2px 2px 0 0;-webkit-transform: rotate(225deg);}
+h1{height:45px;color:#999;line-height:45px;font-size: 18px;font-weight:600;margin:0;padding:0;}
+/*栏目导航nav*/
+nav{background:#f4f4f4;overflow:hidden;margin:0}
+nav a{display:inline-block;text-align:center;line-height:42px;color:#A1A1A1;width:20%;font-size:16px;}
+#nav,.file{background:#fff;}
+/*普通导航*/
+.nav{height:38px;background-color:#f4f4f4;}.nav a{display:block;float:left;box-sizing:border-box;height:38px;line-height:38px;text-align:center;font-size:16px;border-right:1px solid #dbe3f0;width:25%}
+/*连接*/
+#url ul{padding:0;margin:0;}
+#url li{padding:8px;border-bottom:1px solid #f4f4f4;background: url(../image/right.png) no-repeat 97% center #fff;-webkit-background-size: 5px auto;overflow:hidden;white-space:nowrap;}
+/*文章*/
+#bg{font:14px/25px "";margin:10px;background:#FFF;box-shadow:0 1px 3px #B9B9B9;border:0;border-radius:1.9px;}
+#font{padding:7px;margin:0;word-wrap:break-word;overflow:hidden;}
+#bg ul{margin:0;padding:0;}
+#bg li{border-bottom:1px dashed #CCC;padding:7px;word-wrap:break-word;overflow:hidden;}#bg span{float:right;}#bg span a{margin:3px;}
+/*分页*/
+#page{background-color:#f4f4f4;}
+#page a{display:block;float:left;box-sizing:border-box;height:38px;line-height:38px;text-align:center;font-size:16px;border-right:1px solid #dbe3f0;width:20%}
+#file{position: relative;top: 0;width: 100%; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); z-index: 30;margin:0}
+/*搜索框*/
+.form,input{margin:0;padding:0;}
+#input{vertical-align:middle;position:relative;left:0px;top:0;width:75%;height:33px;line-height:33px;font-size:14px;color:#008000;border:none;border-top:1px solid #dbe3f0;background:#f9f9f9}
+#submit{display:inline-block;width:25%;height:33px;vertical-align:middle;overflow:hidden;clip:rect(0px,0px,22px,0px);border:solid 0px #5c97b8;background:#f4f4f4;color:#5c97b8;border:1px 0 0 1px solid #dbe3f0;}
+/*点赞*/
+.qiehuan{background:#fff -webkit-gradient(linear,0 0,0 100%,from(#ffffba),to(#ffffea));padding:1px;height:32px;line-height:32px !important;}
+/*提示*/
+#tishi,#jz{text-align:center;height:auto;position: fixed;top:50%;background-color: rgba(0,0,0,0.3);padding:5px;display:none;color:#fff;margin-left:45%;}
+/*点赞*/
+.as-gf{border-top: 1px solid white;border-bottom: 1px solid #E0E0E0;background: white;color: #3E3E3E;font-weight: bold;text-shadow: 0 1px 1px white;background-image: -webkit-linear-gradient(top, #EDEDED, #CECECE);margin:0px 0px 0px 0px;height: 38px;padding:0 10px;}
+.ding{margin:5px;line-height: 25px;font-size: 12px;font-weight: normal;color: #999;text-shadow: 0 1px 1px white;background: #fbfbfb;padding: 0 5px;border-radius: 3px;box-shadow: 0px 1px 3px #999 inset;}
+#js,#j{width:20;float:left}
+.ding img {vertical-align: -6px;max-width: 21px;}
+#title{padding:5px;background:#fff;margin:3px;color:#454513;border-radius: 3px;box-shadow: 0px 1px 3px #999;text-align:center;}
+/*底部*/
+.footer { padding: 10px; background: #fff; text-align: center; clear: both; float: none; }
+.footer .banben { height: 30px; }
+.footer .banben a {color:#f4f4f4;display: inline-block; font-size: 15px; margin-left: 12px; line-height: 40px; }
+.footer .banben a.a { background-color:rgba(0,0,0,.2); border-radius: 2px; color: white; height: 30px; line-height: 30px; width: 67px; }
+.footer p { color: rgba(255,255,255,.77); font-size: 12px; height: 22px; line-height: 22px; padding: 0 12px; }
+.footer p a { color: #FFFFFF; }
+#top { bottom: 5%; position: fixed; right: 5%; z-index: 100; display: none;
+}

@@ -1,0 +1,7 @@
+guigushi.php  文章内容页
+qiehuan.php   内容配合随机
+
+classify.php  文章分类页
+pl.php 评论
+jb.php  举报
+ft.php  投稿

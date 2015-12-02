@@ -1,0 +1,8 @@
+install目录文件说明
+index.php 访问安装
+sql.php  SQL语句
+danger.php  安全文件
+config.php  连接数据库
+admin.php 基本淘汰
+sjk.php 数据库主机帐号密码
+其他无关主要

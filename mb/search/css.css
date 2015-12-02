@@ -1,0 +1,39 @@
+body{background: #eee;color:#c16879;width:100%;margin:0px;border:0px;padding:0px;font-family:,"Adobe黑体","黑体","宋体",Arial;list-style-type:none;}
+body,ul,li{margin:0;padding:0;list-style-type:none;}
+a:link,a:visited{text-decoration:none;color:#008800}
+h1{display:none;}
+#logo {height:40px;background:#FFF;}
+#logo img{height:30px;margin:5px 10px;}
+#e{background:#333;height:42px;overflow:hidden;margin:0}
+#e a{display:inline-block;text-align:center;line-height:42px;color:#A1A1A1;width:20%;font-size:16px;}
+#e a.c{background-color:#454545;color:#F2F2F2;}
+#e img{float:left;}
+.form,input,select{margin:0;padding:0;}
+#input{vertical-align:middle;position:relative;left:0px;top:0;width:45%;height:32px;line-height:32px;font-size:14px;color:#008000;border:none;background:#fff}
+.form .select{display:inline-block;height:32px;vertical-align:middle;overflow:hidden;clip:rect(0px,0px,22px,0px);width:25%;border:solid 0px #5c97b8;background:#ddd;margin:0}
+.form .select select {position:relative;left:0px;top:0;width:100%;height:32px;line-height:32px;font-size:14px;color:#008000;border:none;margin:0}
+.submit{display:inline-block;width:27%;height:32px;vertical-align:middle;overflow:hidden;clip:rect(0px,0px,22px,0px);border:solid 0px #5c97b8;background:#ffffbb;color:#5c97b8;margin:0}
+/*连接*/
+ul{padding:0px;margin:0px}
+li{list-style-type:none;padding:8px;border-top:1px solid #ddd;-webkit-background-size: 5px auto;overflow:hidden;background:#fff}
+li img{width:50%;height:190px;}
+nav{height:38px;background-color:#f4f4f4;}
+nav a{display:block;float:left;box-sizing:border-box;height:38px;line-height:38px;text-align:center; font-size:16px;border-right:1px solid #dbe3f0;color:red}
+#navpage a{width:25%;}
+#gg{width:auto;text-align:center;padding:6px;}
+#nav{background:#fff;}
+#file {position: relative;top: 0;width: 100%; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); z-index: 30;margin:0}
+#pl{background:#ffffff;}
+#pl b{font-size:16px;color:#454545}
+#pl i{float:right}
+#pl span{font-size:14px;color:#454545;}
+#pl img{height:100px;width:100px;}
+.footer {padding:10px;background:#fff;text-align:center;clear:both;float:none; }
+.footer .banben {height: 30px;}
+.footer .banben a {color:#f4f4f4;display:inline-block; font-size:15px;margin-left:12px;line-height:40px;}
+.footer .banben a.a{background-color:rgba(0,0,0,.2);
+border-radius:2px;color:white;height:30px;line-height:30px;width: 67px; }
+.footer p{color:rgba(255,255,255,.77);font-size: 12px;height:22px;line-height:22px;padding:0 12px;}
+.footer p a{color:#FFFFFF;}
+#top {bottom: 5%;position:fixed;right:5%;z-index:100;display:none;}
+o{color:#336699;}

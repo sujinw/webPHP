@@ -1,0 +1,12 @@
+<?php
+$title="幻影网站设计";//网站标题
+$keywords="沃の鬼故事,手机鬼故事,鬼故事交流,恐怖片,恐怖图片";
+$description="沃の鬼故事网站提供,恐怖鬼故事,医院鬼故事,短篇鬼故事,民间鬼故事,乡村鬼故事,校园鬼故事等…guigs.cn";
+$adminqqsid="Aayvenk2-B64U7A05DXapQwC";
+$adminqq="790431300";
+$adminmoney="5";
+$adminmoneyvip="10";
+$adminlinksh="1";
+$adminjb="10";
+$adminjbms="1";
+?>
