@@ -1,6 +1,0 @@
-/*QQ790431300*/
-classify.php  文章分类
-guigushi.php  文章内容
-data.php   接收评论内容
-bq.php  表情文件
-fatie.php  发帖文件

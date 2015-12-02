@@ -1,0 +1,1 @@
+a:1:{i:0;a:5:{s:8:"webtitle";s:33:"mbcms-轻便的文章管理系统";s:7:"weblogo";s:4:"logo";s:6:"webseo";s:53:"轻便文章管理系统,cms管理系统,文章系统";s:6:"webdes";s:102:"轻便好用的cms文章管理系统，入手简单，操作方便，人性化cms文章管理系统。";s:12:"webcopyright";s:15:"mbcms（2015）";}}
