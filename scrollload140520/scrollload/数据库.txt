@@ -1,0 +1,130 @@
+-- 
+-- 数据库: `test`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `mypic`
+-- 
+
+CREATE TABLE `mypic` (
+  `id` int(11) NOT NULL auto_increment,
+  `pic` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=111 ;
+
+-- 
+-- 导出表中的数据 `mypic`
+-- 
+
+INSERT INTO `mypic` VALUES (1, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (2, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (3, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (4, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (5, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (6, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (7, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (8, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (9, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (10, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (11, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (12, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (13, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (14, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (15, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (16, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (17, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (18, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (19, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (20, 'images/pic_137057417076481.jpg');
+INSERT INTO `mypic` VALUES (21, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (22, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (23, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (24, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (25, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (26, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (27, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (28, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (29, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (30, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (31, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (32, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (33, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (34, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (35, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (36, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (37, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (38, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (39, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (40, 'images/pic_137108994127741.jpg');
+INSERT INTO `mypic` VALUES (41, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (42, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (43, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (44, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (45, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (46, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (47, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (48, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (49, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (50, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (51, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (52, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (53, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (54, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (55, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (56, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (57, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (58, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (59, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (60, 'images/pic_137117354718096.jpg');
+INSERT INTO `mypic` VALUES (61, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (62, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (63, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (64, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (65, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (66, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (67, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (68, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (69, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (70, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (71, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (72, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (73, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (74, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (75, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (76, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (77, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (78, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (79, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (80, 'images/pic_139590176240114032714.jpg');
+INSERT INTO `mypic` VALUES (81, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (82, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (83, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (84, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (85, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (86, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (87, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (88, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (89, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (90, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (91, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (92, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (93, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (94, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (95, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (96, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (97, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (98, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (99, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (100, 'images/pic_139597056846114032809.jpg');
+INSERT INTO `mypic` VALUES (101, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (102, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (103, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (104, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (105, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (106, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (107, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (108, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (109, 'images/pic_1371089941277433.jpg');
+INSERT INTO `mypic` VALUES (110, 'images/pic_1371089941277433.jpg');
