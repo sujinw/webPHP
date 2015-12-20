@@ -1,0 +1,19 @@
+[TIME]:2015-12-10 09:35:12ERROR:mysql错误：Unknown column 'creat_time' in 'field list'<br />SQL:INSERT INTO mb_article (`column_id`,`category_id`,`title`,`tags`,`recommend`,`author`,`source`,`details`,`display`,`thumb`,`image`,`creat_time`) VALUES ('5','1','测试数据测试数据测试数据','测试数据测试数据','0','测试数据测试数据测试数据','测试数据测试数据测试数据','<p><baseImg/></p><p><br></p><p><br></p><p><br></p><p><br></p><h1>测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据</h1>','0','Upload/Article/images/2015/12/10/3721449711311.jpg','E:/WEBPROJECT/PHP/myPHP/Temp/Article/5/1/2015-12-10-5-1.txt','1449711311') 
+[TIME]:2015-12-10 09:35:48ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:04:11ERROR:syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第70行} 
+[TIME]:2015-12-10 12:04:41ERROR:syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第70行} 
+[TIME]:2015-12-10 12:05:21ERROR:syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第70行} 
+[TIME]:2015-12-10 12:06:00ERROR:Call to undefined method ArticleModel::list()E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第71行} 
+[TIME]:2015-12-10 12:13:41ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:15:27ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:18:19ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:18:45ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:19:37ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:21:25ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-10 12:21:30ERROR:syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Model\ArticleModel.class.php{第33行} 
+[TIME]:2015-12-10 20:08:15ERROR:syntax error, unexpected ''.txt'' (T_CONSTANT_ENCAPSED_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第30行} 
+[TIME]:2015-12-10 20:08:52ERROR:syntax error, unexpected ''.txt'' (T_CONSTANT_ENCAPSED_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第30行} 
+[TIME]:2015-12-10 20:33:29ERROR:syntax error, unexpected 'all' (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Model\ArticleModel.class.php{第34行} 
+[TIME]:2015-12-10 20:33:41ERROR:syntax error, unexpected 'all' (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Model\ArticleModel.class.php{第34行} 
+[TIME]:2015-12-10 20:34:00ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Article/listArticle.html模板文件不存在 
+[TIME]:2015-12-10 20:50:53ERROR:syntax error, unexpected 'C' (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Model\ArticleModel.class.php{第34行} 

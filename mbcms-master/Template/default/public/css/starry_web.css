@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Starry */
+.bdsharebuttonbox {  float: left;  margin-top: 5px;  width: 170px;}
+
+/* 登录 */
+.w-account-ctn {  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  border-radius: 5px;  margin: 0 auto; width: 400px;  padding: 35px;  position: relative;}
+.w-account-ctn p {  display: block;  position: relative;  margin-bottom: 24px;}
+.w-account-ctn label {  display: block;  font-size: 12px;  margin-bottom: 5px; color:#B3B3B3;}
+.a-module-login, .a-module-register {  padding-bottom: 20px;}
+fieldset {  border: 0;  margin: 0;  padding: 0;}
+.w-account-ctn legend {  margin-bottom: 0;  padding-bottom: 25px; font-size:22px;}
+
+.login-input {  background-color: #fcfcfc;  border: 1px solid #cccccc;  height: 40px;  width: 100%;  text-indent: 8px;  vertical-align: middle;  color: #444;  border-radius: 3px;  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.login-input:hover {  border-color: rgba(59,170,36,0.5);} 
+.login-input:focus {  border-radius: 5px;  outline: -webkit-focus-ring-color auto 0;  moz-box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  -webkit-box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  border-color: #3baa24;  outline: 0; }
+.login-btn {  border: 1px #999 solid; border-radius:3px; background-image: -moz-linear-gradient(#4eb23a,#359921);  background-image: -webkit-linear-gradient(#4eb23a,#359921);  background-image: linear-gradient(#4eb23a,#359921);  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4EB23A', endColorstr='#FF359921');  -moz-box-shadow: inset 0 1px 0 #72c261;  -webkit-box-shadow: inset 0 1px 0 #72c261;  box-shadow: inset 0 1px 0 #72c261;  text-shadow: 0 1px 0 rgba(0,0,0,0.2);  background-color: #4eb23a;  border-color: #2c8e00;  color: #fff;}
+.login-btn {  font-size: 16px;  height: 42px;  padding: 11px 15px;  min-width: 85px; display: block; width: 100%; line-height:0px;}
+.login-btn:hover {  background-image: -moz-linear-gradient(#57c840,#3eaf27);  background-image: -webkit-linear-gradient(#57c840,#3eaf27);  background-image: linear-gradient(#57c840,#3eaf27);  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF57C840', endColorstr='#FF3EAF27');  -moz-box-shadow: inset 0 1px 0 #79d367;  -webkit-box-shadow: inset 0 1px 0 #79d367;  box-shadow: inset 0 1px 0 #79d367;}
+.w-checkbox {  -moz-appearance: none;  -webkit-appearance: none;  -moz-border-radius: 2px;  -webkit-border-radius: 2px;  border-radius: 2px;  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;  box-sizing: border-box;  display: inline-block;  vertical-align: middle;  background-color: #fff;  border: 1px #cacaca solid;  height: 14px;  margin: -2px 3px 0 0;  vertical-align: middle;  width: 14px;}
+input[type="checkbox"] {  box-sizing: border-box;  outline: none;  padding: 0;}
+.sprite-sprite, .w-checkbox:enabled:checked, .w-checkbox:enabled:checked:hover {  background-image: url(/Template/kelink_starry_web/static/images/sprite-sb796308222.png);  background-repeat: no-repeat;}
+.w-checkbox:enabled:checked, .w-checkbox:enabled:checked:hover {  background-position: 0 0;  background-color: #fff;  border-color: #3baa24;}
+.a-field-switcher {  font-size: 14px; padding-bottom:20px;   border-bottom: 1px solid #ddd;  height: 20px;  margin-top: 10px;}
+.a-field-switcher :after {  content: '.';  clear: both;  display: block;  height: 0;  visibility: hidden;}
+.a-field-switcher .a-pull-left {  float: left;  color: #2f7c2f;}
+.a-field-switcher .a-pull-right {  float: right;color: #2f7c2f;}
+.a-field-switcher .a-pull-left:hover,.a-field-switcher .a-pull-right:hover{  color: #3baa24;  text-decoration: underline;}
+.a-field-social {  padding-top: 20px;  text-align: center;}
+.w-btn.w-btn-grand {  font-size: 14px;  height: 38px;  padding: 9px 15px;  min-width: 80px;}
+.sanfang-btn { width:100%; overflow:hidden; margin-top:20px;  margin-bottom: 10px;}
+.sanfang-btn li { width:48%; float:left; height:38px; line-height:38px; font-size:14px; text-align:center;   background-image: linear-gradient(#51aff7,#328ED7);border-radius:50px; margin-right:2%;}
+.sanfang-btn li:hover { background:#51aff7;}
+.sanfang-btn li:nth-child(2) { margin-right:0; margin-left:2%; background-image: linear-gradient(#51BA3C,#359621);}
+.sanfang-btn li:nth-child(2):hover {background:#51BA3C;}
+.sanfang-btn li a { color:#fff; display:block;}
+.a-icon-qq { width:25px; height:25px; background: url(/Template/kelink_starry_web/static/images/iconfont-qq.png) no-repeat center center;  display: inline-block;  vertical-align: -7px;  margin-right: 5px;  background-size: 22px;}
+.a-icon-weixin { width:25px; height:25px; background: url(/Template/kelink_starry_web/static/images/iconfont-weixin.png) no-repeat center center;display: inline-block;  vertical-align: -7px;  margin-right: 5px;  background-size: 22px;}
+
+.waplogin .btn { height:45px; width:100%; border: 1px #999 solid; border-radius:3px; background-image: -moz-linear-gradient(#4eb23a,#359921);  background-image: -webkit-linear-gradient(#4eb23a,#359921);  background-image: linear-gradient(#4eb23a,#359921);  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4EB23A', endColorstr='#FF359921');  -moz-box-shadow: inset 0 1px 0 #72c261;  -webkit-box-shadow: inset 0 1px 0 #72c261;  box-shadow: inset 0 1px 0 #72c261;  text-shadow: 0 1px 0 rgba(0,0,0,0.2);  background-color: #4eb23a;  border-color: #2c8e00;  color: #fff; font-size:14px; border-radius:50px;}
+.wapreg .btn {height:45px; width:100%; border: 1px #999 solid;   background-image: linear-gradient(#51aff7,#328ED7);   background-color: #4DABF3;  border-color: #46A3EB;  color: #fff; font-size:14px; border-radius:50px;}
+.wapreg .txt,.waplogin .txt {background-color: #fcfcfc;  border: 1px solid #cccccc;  height: 36px;  width: 100%;  text-indent: 8px;  vertical-align: middle;  color: #444;  border-radius: 3px;  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.wapreg .txt:focus,.waplogin .txt:focus {  border-radius: 5px;  outline: -webkit-focus-ring-color auto 0;  moz-box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  -webkit-box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  box-shadow: 0 0 3px rgba(59,170,36,0.6),0 1px 3px rgba(0,0,0,0.05) inset;  border-color: #3baa24;  outline: 0;}
+.wapreg .txt:hover,.waplogin .txt:hover {  border-color: rgba(59,170,36,0.5);}
+
+.wapindex-myfile,.bbs-userinfo { width:1190px; margin:0 auto; margin-top:30px; font-size:15px;}
+

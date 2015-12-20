@@ -1,0 +1,17 @@
+[TIME]:2015-11-27 15:12:54ERROR:Unsupported operand typesE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\PageMy.class.php{第15行} 
+[TIME]:2015-11-27 15:13:53ERROR:Unsupported operand typesE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\PageMy.class.php{第15行} 
+[TIME]:2015-11-27 15:20:12ERROR:syntax error, unexpected ','E:\WEBPROJECT\PHP\myPHP\Admin\Controller\AdminUserController.class.php{第21行} 
+[TIME]:2015-11-27 15:20:51ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:21:36ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:14ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:16ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:16ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:17ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:17ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:17ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:17ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:18ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:18ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:19ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:27ERROR:mysql错误：Undeclared variable: $now<br />SQL:SELECT * FROM mb_admin LIMIT $now,$end 
+[TIME]:2015-11-27 15:22:44ERROR:syntax error, unexpected ','E:\WEBPROJECT\PHP\myPHP\Admin\Controller\AdminUserController.class.php{第21行} 

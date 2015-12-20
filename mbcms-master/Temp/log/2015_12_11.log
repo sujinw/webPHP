@@ -1,0 +1,30 @@
+[TIME]:2015-12-11 15:13:43ERROR:syntax error, unexpected 'class' (T_CLASS)E:\WEBPROJECT\PHP\myPHP\Index\Controller\AuthorController.class.php{第5行} 
+[TIME]:2015-12-11 15:14:14ERROR:syntax error, unexpected 'class' (T_CLASS)E:\WEBPROJECT\PHP\myPHP\Index\Controller\AuthorController.class.php{第5行} 
+[TIME]:2015-12-11 15:15:04ERROR:syntax error, unexpected 'class' (T_CLASS)E:\WEBPROJECT\PHP\myPHP\Index\Controller\AuthorController.class.php{第5行} 
+[TIME]:2015-12-11 15:15:58ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ LIMIT 10 
+[TIME]:2015-12-11 15:16:36ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ LIMIT 10 
+[TIME]:2015-12-11 15:16:44ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ LIMIT 10 
+[TIME]:2015-12-11 15:22:00ERROR:Call to a member function registerPlugin() on a non-objectE:\WEBPROJECT\PHP\myPHP\Index\Controller\IndexController.class.php{第9行} 
+[TIME]:2015-12-11 15:22:24ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Index\Controller\IndexController.class.php{第9行} 
+[TIME]:2015-12-11 15:22:48ERROR:Cannot access  property IndexController::$smartyE:\WEBPROJECT\PHP\myPHP\Index\Controller\IndexController.class.php{第9行} 
+[TIME]:2015-12-11 15:28:57ERROR:Call to undefined method IndexController::registerPlugin()E:\WEBPROJECT\PHP\myPHP\Index\Controller\IndexController.class.php{第9行} 
+[TIME]:2015-12-11 15:29:20ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:30:41ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:30:43ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:30:45ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:30:45ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:31:25ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:05ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:06ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:07ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:07ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:07ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:08ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:08ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:08ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:32:09ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:34:28ERROR:Call to undefined method Smarty::registerPlugin()E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Core\SmartyView.class.php{第35行} 
+[TIME]:2015-12-11 15:36:37ERROR:Uncaught  --> Smarty: Plugin "arclist" not callable <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatebase.php{第137行} 
+[TIME]:2015-12-11 15:49:21ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 4 "{#/foreach}#"  - Unexpected "}", expected one of: "#}" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第4行} 

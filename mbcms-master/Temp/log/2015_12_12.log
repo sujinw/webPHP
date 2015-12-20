@@ -1,0 +1,22 @@
+[TIME]:2015-12-12 12:12:43ERROR:syntax error, unexpected '$result' (T_VARIABLE), expecting identifier (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第88行} 
+[TIME]:2015-12-12 12:12:58ERROR:Call to undefined function content_field()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第85行} 
+[TIME]:2015-12-12 12:13:56ERROR:Call to undefined function S()E:\WEBPROJECT\PHP\myPHP\Common\Lib\Function.php{第106行} 
+[TIME]:2015-12-12 12:13:58ERROR:Call to undefined function S()E:\WEBPROJECT\PHP\myPHP\Common\Lib\Function.php{第106行} 
+[TIME]:2015-12-12 12:15:47ERROR:Call to undefined function S()E:\WEBPROJECT\PHP\myPHP\Common\Lib\Function.php{第106行} 
+[TIME]:2015-12-12 12:15:49ERROR:Call to undefined function S()E:\WEBPROJECT\PHP\myPHP\Common\Lib\Function.php{第106行} 
+[TIME]:2015-12-12 12:16:46ERROR:Call to undefined function content_field()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第85行} 
+[TIME]:2015-12-12 12:39:32ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 1 "{#arclist row='3' images=1 titlelen=1 infolen=2 order#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第1行} 
+[TIME]:2015-12-12 12:49:02ERROR:Call to a member function where() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第56行} 
+[TIME]:2015-12-12 12:49:38ERROR:Call to a member function where() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第56行} 
+[TIME]:2015-12-12 15:57:34ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Controller/ConfigController.class.php控制器未找到 
+[TIME]:2015-12-12 16:06:11ERROR:Cannot redeclare ConfigController::$_dbE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ConfigController.class.php{第23行} 
+[TIME]:2015-12-12 16:06:47ERROR:ConfigController控制器中的index方法未找到呢~~~ 
+[TIME]:2015-12-12 16:24:40ERROR:Call to undefined method ConfigModel::save()E:\WEBPROJECT\PHP\myPHP\Common\Model\ConfigModel.class.php{第42行} 
+[TIME]:2015-12-12 16:26:46ERROR:更新语句必须含有where条件 
+[TIME]:2015-12-12 16:27:00ERROR:更新语句必须含有where条件 
+[TIME]:2015-12-12 16:40:52ERROR:syntax error, unexpected 'true' (T_STRING)E:\WEBPROJECT\PHP\myPHP\Common\Model\ConfigModel.class.php{第53行} 
+[TIME]:2015-12-12 16:45:29ERROR:请先配置数据库！ 
+[TIME]:2015-12-12 16:47:16ERROR:请先配置数据库！ 
+[TIME]:2015-12-12 16:47:41ERROR:请先配置数据库！ 
+[TIME]:2015-12-12 16:48:07ERROR:请先配置数据库！ 

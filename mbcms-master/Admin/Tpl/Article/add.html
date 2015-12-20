@@ -1,0 +1,144 @@
+{#include file='../common/header.html'#}
+<link href="{#$smarty.const.__COMMON_PUBLIC__#}/summernote/summernote.css" rel="stylesheet" />
+<!--路径导航-->
+<ol class="breadcrumb breadcrumb_nav">
+    <li>首页</li>
+    <li>文章管理</li>
+    <li class="active">添加文章</li>
+</ol>
+<!--路径导航-->
+
+<div class="page-content">
+    <div class="panel panel-default">
+        <div class="panel-heading">添加文章</div>
+        <div class="panel-body">
+            <form action="{#$smarty.const.__APP__#}?c=Article&a=addHander" method="post" enctype='multipart/form-data'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9">
+
+                            <div class="form-group clearfix">
+                                <label>栏目和分类</label>
+                                <div class="lanmu">
+                                    <select class="form-control pull-left" name="column_id" id="column">
+                                        {#foreach from=$column item=v#}
+                                        <option value="{#$v.id#}">{#$v._name#}</option>
+                                        {#/foreach#}
+                                    </select>
+                                    <select class="form-control pull-right" name="category_id" id="cate"></select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="titles">文章标题</label>
+                                <input type="text" class="form-control" id="titles" name="title" placeholder="标题" required></div>
+                            <div class="form-group">
+                                <label>文章来源</label>
+                                <input class="form-control" type="text" name="source" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label>文章作者</label>
+                                <input class="form-control" type="text" name="author" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="tags">文章标签</label>
+                                <input type="text" class="form-control" id="tags" name="tags" placeholder="多个用‘|’隔开" required></div>
+                            <div class="form-group">
+                                <label>文章摘要</label>
+                                <textarea class="form-control" rows="3" name="excerpt" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>文章详情</label>
+                                <textarea class="form-control" rows="15" name="details" required id="content"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="thumb">缩略图</label>
+                                <input type="file"  id="thumb" name="thumb"></div>
+                            <div class="form-group">
+                                <label >文章推荐</label>
+
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="recommend" id="recommend1" value="0" checked>不推荐</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="recommend" id="recommend2" value="1">推荐</label>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label >文章隐藏</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="display" id="hidden1" value="0" checked>显示</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="display" id="hidden2" value="1">隐藏</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">提交保存</button>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{#$smarty.const.__COMMON_PUBLIC__#}/summernote/summernote.min.js"></script>
+<script>
+$('#column').change(function(){
+    $.ajax({
+        url:"{#$smarty.const.__APP__#}?c=Article&a=addAjax",
+        type:'post',
+        data:{'id':$(this).val()},
+        dataType:'json',
+        success:function(data){
+            var html = '<option value="0">所属分类</option>';
+            for(var i=0;i<data.length;i++){
+                html += "<option value='"+ data[i].cid +"'>"+ data[i].cname +"</option>";
+            }
+            $('#cate').html(html);
+        }
+    });
+});
+$('#content').summernote({
+  height: 300,                 // set editor height
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+  focus: true,                  // set focus to editable area after initializing summernote
+  onImageUpload: function(files, editor, welEditable) {
+                    sendFile(files[0], editor, welEditable);
+                }
+});
+function sendFile(file, editor, welEditable) {
+    data = new FormData();
+    data.append("file", file);
+    $.ajax({
+        data: data,
+        type: "POST",
+        url: "{#$smarty.const.__APP__#}?c=Article&a=articlePicAjax",
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function(url) {
+            editor.insertImage(welEditable, url);
+        }
+    });
+}
+</script>
+</body>
+</html>

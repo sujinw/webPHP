@@ -1,0 +1,9 @@
+[TIME]:2015-12-07 10:49:47ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=2 
+[TIME]:2015-12-07 10:50:02ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=3 
+[TIME]:2015-12-07 10:51:09ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=2 
+[TIME]:2015-12-07 10:51:15ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<br />SQL:SELECT * FROM mb_ WHERE column_id= 
+[TIME]:2015-12-07 10:51:40ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=4 
+[TIME]:2015-12-07 10:52:23ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=3 
+[TIME]:2015-12-07 10:53:29ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=2 
+[TIME]:2015-12-07 10:54:54ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ WHERE column_id=2 
+[TIME]:2015-12-07 11:23:48ERROR:mysql错误：Unknown column 'id' in 'field list'<br />SQL:SELECT `id`,`name` FROM mb_article_category WHERE column_id=5 

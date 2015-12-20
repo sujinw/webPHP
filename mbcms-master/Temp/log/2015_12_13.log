@@ -1,0 +1,45 @@
+[TIME]:2015-12-13 13:33:10ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config.webname#}"  - Unexpected ".", expected one of: "#}" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:34:59ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:43:28ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}{#/config#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:44:19ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}{#/config#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:44:21ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}{#/config#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:44:21ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}{#/config#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:44:22ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}{#/config#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:46:55ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#$var|ss#}" unknown modifier "ss" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:48:50ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config arr=1#}" unclosed {#config#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:55:29ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#eightball webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 13:56:44ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#eightball.Yes#}"  - Unexpected ".", expected one of: "#}" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:00:16ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#eightball.Yes#}"  - Unexpected ".", expected one of: "#}" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:00:18ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#eightball.Yes#}"  - Unexpected ".", expected one of: "#}" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:11:41ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:12:00ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:12:01ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:12:23ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:12:45ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:12:47ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:13:32ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:13:33ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 
+[TIME]:2015-12-13 14:14:17ERROR:syntax error, unexpected ')'E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第122行} 
+[TIME]:2015-12-13 14:14:32ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 6 "{#config webname#}" too many shorthand attributes <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第6行} 

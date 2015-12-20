@@ -1,0 +1,116 @@
+{#include file='../Common/header.html'#}
+<!--路径导航-->
+<ol class="breadcrumb breadcrumb_nav">
+    <li>首页</li>
+    <li>RBAC权限控制管理</li>
+    <li class="active">节点列表</li>
+</ol>
+<!--路径导航-->
+
+<div class="page-content">
+    <form class="form-inline" action="{#$smarty.const.__APP__#}?c=Rbac&a=accessHander" method="post">
+        <div class="panel panel-default">
+            <div class="panel-heading">节点列表</div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th width="10%">ID</th>
+                        <th width="30%">节点名称</th>
+                        <th width="20%">节点描述</th>
+                        <th width="10%">节点状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {#foreach from=$node item=app#}
+                    <tr>
+                        <td>{#$app.id#}</td>
+                        <td>
+                        	{#$app.name#}
+                        	<div class="checkbox">
+                        		<label>
+                        			<input type="checkbox" name="access[]" value="{#$app.id#}_1" id='{#$app.id#}'  {#if $app.access eq 1#} checked = "checked" {#/if#}></label>
+                        	</div>
+                        </td>
+                        <td>{#$app.title#}</td>
+                        <td>{#if $app.status eq 0#}正常{#else#}禁用{#/if#}</td>
+                    </tr>
+                    {#foreach from=$app.child item=action#}
+                    <tr>
+                        <td>{#$action.id#}</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─{#$action.name#}
+                        <div class="checkbox">
+                        		<label>
+                        			<input type="checkbox" name="access[]" value="{#$action.id#}_2" id='{#$app.id#}_{#$action.id#}' app="{#$app.id#}" action='true' {#if $action.access eq 1#} checked = "checked" {#/if#}></label>
+                        	</div>
+                        </td>
+                        <td>{#$action.title#}</td>
+                        <td>{#if $action.status eq 0#}正常{#else#}禁用{#/if#}</td>
+                    </tr>
+                    {#foreach from=$action.child item=method#}
+                    <tr>
+                        <td>{#$method.id#}</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─{#$method.name#}
+                        <div class="checkbox">
+                        		<label>
+                        			<input type="checkbox" name="access[]" value="{#$method.id#}_3" id="{#$app.id#}_{#$action.id#}_{#$method.id#}" app="{#$app.id#}" action="{#$action.id#}"{#if $method.access eq 1#} checked = "checked" {#/if#}></label>
+                        </div>
+                        </td>
+                        <td>{#$method.title#}</td>
+                        <td>{#if $method.status eq 0#}正常{#else#}禁用{#/if#}</td>
+                    </tr>
+                    {#/foreach#}
+                    {#/foreach#}
+                    {#/foreach#}
+                   </tbody>
+                </table>
+            </div>
+        </div>
+        <input type="hidden" name="rid" value="{#$rid#}" />
+       <button type="submit" class="btn btn-primary">提交保存</button>
+
+    </form>
+</div>
+<script type="text/javascript">
+(function(){
+	var check = $('input[type=checkbox]');
+	check.click(function(){
+		var thisid = $(this).attr('id').split('_');
+		if(thisid.length == 1){
+			// var inputs = $('*[id*='+ thisid[0] +']');
+			var inputs = $('input[app='+ thisid[0] +']')
+			console.log(inputs)
+			if(!$(this).prop('checked')){
+				$(this).prop('checked',false);
+				inputs.prop('checked',false);
+				// inputs.removeAttr('checked');
+				console.log(1)
+			}else{
+				$(this).prop('checked','checked');
+				inputs.prop('checked','checked');
+				console.log(2)
+			}		
+		}else if(thisid.length == 2){
+			// var inputs = $('*[id*='+ thisid[0] +']');
+			var inputs = $('input[action='+ thisid[1] +']')
+			console.log(inputs)
+			if(!$(this).prop('checked')){
+				$(this).prop('checked',false);
+				inputs.prop('checked',false);
+				// inputs.removeAttr('checked');
+				console.log(1)
+			}else{
+				$(this).prop('checked','checked');
+				inputs.prop('checked','checked');
+				console.log(2)
+			}
+						
+		}
+	});
+	
+
+})()
+
+</script>
+</body>
+</html>

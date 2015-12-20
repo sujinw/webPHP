@@ -1,0 +1,5 @@
+[TIME]:2015-12-16 13:24:02ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Admin\Tpl\Forum\addForum.html"  on line 176 "</html>" unclosed {#foreach#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第176行} 
+[TIME]:2015-12-16 13:35:44ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ForumController.class.php{第20行} 
+[TIME]:2015-12-16 13:36:21ERROR:mysql错误：Unknown column 'father_id' in 'field list'<br />SQL:INSERT INTO mb_forum (`father_id`,`fname`,`fcolor`,`instruc`,`display`,`create_time`) VALUES ('1','测试板块','#B8D100','这是一个用来测试的二级板块','1','1450244181') 
+[TIME]:2015-12-16 13:38:01ERROR:mysql错误：Unknown column 'create_time' in 'field list'<br />SQL:INSERT INTO mb_forum (`father_fid`,`fname`,`fcolor`,`instruc`,`display`,`create_time`) VALUES ('1','测试版块','#00D5FF','这是一个测试的耳机版块','1','1450244281') 

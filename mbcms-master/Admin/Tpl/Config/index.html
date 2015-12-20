@@ -1,0 +1,41 @@
+{#include file='../Common/header.html'#}
+
+<!--路径导航-->
+<ol class="breadcrumb breadcrumb_nav">
+    <li>首页</li>
+    <li>文章管理</li>
+    <li class="active">系统设置</li>
+</ol>
+<!--路径导航-->
+<div class="page-content">
+    <div class="panel panel-default">
+        <div class="panel-heading">系统设置</div>
+        <div class="panel-body">
+            <form action="{#$smarty.const.__APP__#}?c=config&a=set_config" method="post">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9">
+                            {#foreach from=$config item=v#}
+                            <div class="form-group">
+                                <label for="{#$v.name#}">{#$v.title#}</label>
+                                {#$v.html#}
+                            </div>
+                            {#/foreach#}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交保存</button>
+
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

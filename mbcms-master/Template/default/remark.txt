@@ -1,0 +1,10 @@
+文件夹及文件说明
+
+public       							静态资源
+common		 							公用内容文件夹
+index		 							首页模板文件夹
+list		 							列表模板文件夹
+	--article							文章列表文件夹
+view		 							内容页模板文件夹
+	--article							文章内容页文件夹
+ucenter	 								会员中心模板文件夹

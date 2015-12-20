@@ -1,0 +1,19 @@
+[TIME]:2015-11-25 12:30:42ERROR:IndexController控制器中的welcome方法未找到呢~~~ 
+[TIME]:2015-11-25 12:30:47ERROR:IndexController控制器中的welcome方法未找到呢~~~ 
+[TIME]:2015-11-25 12:35:22ERROR:IndexController控制器中的welcome方法未找到呢~~~ 
+[TIME]:2015-11-25 13:58:33ERROR:Class 'UserModel' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php{第141行} 
+[TIME]:2015-11-25 13:59:07ERROR:Class 'AdminUserModel' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php{第141行} 
+[TIME]:2015-11-25 14:01:25ERROR:Class 'AdminUserModel' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php{第141行} 
+[TIME]:2015-11-25 14:01:40ERROR:Class 'AdminUserModel' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php{第141行} 
+[TIME]:2015-11-25 14:06:38ERROR:mysql错误：Table 'mbcms.mb_user' doesn't exist<br />SQL:SELECT* FROM mb_user WHERE username="admin" LIMIT 1 
+[TIME]:2015-11-25 14:07:29ERROR:mysql错误：Table 'mbcms.mb_user' doesn't exist<br />SQL:SELECT * FROM mb_user WHERE username="admin" LIMIT 1 
+[TIME]:2015-11-25 14:07:59ERROR:mysql错误：Unknown column 'username' in 'where clause'<br />SQL:SELECT * FROM mb_admin WHERE username="admin" LIMIT 1 
+[TIME]:2015-11-25 16:17:16ERROR:syntax error, unexpected 'echo' (T_ECHO)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第37行} 
+[TIME]:2015-11-25 16:17:22ERROR:syntax error, unexpected 'echo' (T_ECHO)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第37行} 
+[TIME]:2015-11-25 17:17:21ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='1448443041',`admin_loginip`='0.0.0.0' WHERE id=2' at line 1<br />SQL:UPDATE mb_adminSET `admin_logintime`='1448443041',`admin_loginip`='0.0.0.0' WHERE id=2 
+[TIME]:2015-11-25 17:19:27ERROR:Call to undefined function inet_aton()E:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第23行} 
+[TIME]:2015-11-25 21:20:40ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Controller/EmptyController.class.php控制器未找到 
+[TIME]:2015-11-25 21:21:39ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Controller/EmptyController.class.php控制器未找到 
+[TIME]:2015-11-25 21:24:07ERROR:Call to undefined method AdminUserController::disply()E:\WEBPROJECT\PHP\myPHP\Admin\Controller\AdminUserController.class.php{第8行} 
+[TIME]:2015-11-25 23:27:03ERROR:syntax error, unexpected 'exit' (T_EXIT)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\AdminUserController.class.php{第8行} 
+[TIME]:2015-11-25 23:27:06ERROR:syntax error, unexpected 'exit' (T_EXIT)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\AdminUserController.class.php{第8行} 

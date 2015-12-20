@@ -1,0 +1,21 @@
+[TIME]:2015-12-09 14:42:04ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-09 15:08:58ERROR:syntax error, unexpected 'echo' (T_ECHO)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第25行} 
+[TIME]:2015-12-09 15:09:21ERROR:syntax error, unexpected 'p' (T_STRING)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第25行} 
+[TIME]:2015-12-09 15:37:43ERROR:Call to undefined function htmlspecialchars_decod()E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第32行} 
+[TIME]:2015-12-09 16:24:06ERROR:syntax error, unexpected '='E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第9行} 
+[TIME]:2015-12-09 16:26:49ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第44行} 
+[TIME]:2015-12-09 16:27:05ERROR:Call to a member function addArticle() on a non-objectE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第44行} 
+[TIME]:2015-12-09 16:29:12ERROR:Call to a member function addArticle() on a non-objectE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第44行} 
+[TIME]:2015-12-09 16:29:38ERROR:syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第44行} 
+[TIME]:2015-12-09 16:29:45ERROR:Call to a member function addArticle() on a non-objectE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第44行} 
+[TIME]:2015-12-09 16:30:17ERROR:mysql错误：Unknown column 'files' in 'field list'<br />SQL:INSERT INTO mb_article (`column_id`,`category_id`,`title`,`source`,`author`,`tags`,`excerpt`,`details`,`files`,`thumb`,`recommend`,`hidden`) VALUES ('5','1','第一次测试文章','本站原创','slade','文章|cms','第一次测试文章第一次测试文章第一次测试文章第一次测试文章','<p>第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章<baseImg/></p><p><br></p><p>第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章第一次测试文章<baseImg/><br></p>','200943155840.jpg','Lotus_Irelia.jpg','0','0') 
+[TIME]:2015-12-09 16:38:38ERROR:Non-static method Upload::upload() cannot be called statically, assuming $this from incompatible contextE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第36行} 
+[TIME]:2015-12-09 16:39:19ERROR:Non-static method Upload::upload() cannot be called statically, assuming $this from incompatible contextE:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第36行} 
+[TIME]:2015-12-09 16:40:09ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第36行} 
+[TIME]:2015-12-09 16:40:22ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第36行} 
+[TIME]:2015-12-09 16:40:52ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ArticleController.class.php{第37行} 
+[TIME]:2015-12-09 16:41:22ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Dir.class.php类未找到 
+[TIME]:2015-12-09 16:42:19ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-09 16:44:17ERROR:ArticleController控制器中的list方法未找到呢~~~ 
+[TIME]:2015-12-09 16:44:20ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Dir.class.php类未找到 
+[TIME]:2015-12-09 16:45:07ERROR:ArticleController控制器中的list方法未找到呢~~~ 

@@ -1,0 +1,2 @@
+[TIME]:2015-12-03 23:32:48ERROR:Smarty error: [in E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Index/index.html line 10]: syntax error: $smarty.sonst is an unknown reference (Smarty_Compiler.class.php, line 2164)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 
+[TIME]:2015-12-03 23:32:50ERROR:Smarty error: [in E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Index/index.html line 10]: syntax error: $smarty.sonst is an unknown reference (Smarty_Compiler.class.php, line 2164)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 

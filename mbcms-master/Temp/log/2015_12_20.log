@@ -1,0 +1,26 @@
+[TIME]:2015-12-20 12:01:26ERROR:syntax error, unexpected ']'E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第109行} 
+[TIME]:2015-12-20 12:34:21ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\Index\index.html"  on line 10 "{/chanal}" unclosed {#chanal#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第10行} 
+[TIME]:2015-12-20 12:35:18ERROR:Call to undefined function where()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第152行} 
+[TIME]:2015-12-20 12:35:55ERROR:Call to undefined function where()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第152行} 
+[TIME]:2015-12-20 12:35:57ERROR:Call to undefined function where()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第152行} 
+[TIME]:2015-12-20 12:36:54ERROR:Call to undefined function where()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第153行} 
+[TIME]:2015-12-20 12:37:07ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第156行} 
+[TIME]:2015-12-20 12:38:18ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 12:38:19ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 12:38:20ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 12:38:20ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 12:38:20ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 12:38:21ERROR:Call to a member function all() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第155行} 
+[TIME]:2015-12-20 13:15:28ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第194行} 
+[TIME]:2015-12-20 13:16:06ERROR:viewController控制器中的index方法未找到呢~~~ 
+[TIME]:2015-12-20 13:18:00ERROR:syntax error, unexpected 'index' (T_STRING), expecting variable (T_VARIABLE)E:\WEBPROJECT\PHP\myPHP\Index\Controller\ViewController.class.php{第6行} 
+[TIME]:2015-12-20 14:08:38ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\Index\Tpl\view\index.html"  on line 1 "{#pagenext pre='next'#}" unknown tag "pagenext" <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第1行} 
+[TIME]:2015-12-20 14:09:11ERROR:Call to undefined function int()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第187行} 
+[TIME]:2015-12-20 14:09:49ERROR:mysql错误：Unknown column 'id' in 'order clause'<br />SQL:SELECT * FROM mb_article WHERE aid=0 ORDER BY id desc LIMIT 1 
+[TIME]:2015-12-20 14:11:01ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY id desc LIMIT 1' at line 1<br />SQL:SELECT * FROM mb_article WHERE aid= ORDER BY id desc LIMIT 1 
+[TIME]:2015-12-20 14:11:56ERROR:mysql错误：Unknown column 'id' in 'order clause'<br />SQL:SELECT * FROM mb_article WHERE aid=1 ORDER BY id desc LIMIT 1 
+[TIME]:2015-12-20 14:12:15ERROR:Call to undefined function int()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第199行} 
+[TIME]:2015-12-20 14:12:40ERROR:Call to undefined function int()E:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第199行} 
+[TIME]:2015-12-20 14:15:06ERROR:mysql错误：Unknown column 'id' in 'order clause'<br />SQL:SELECT * FROM mb_article WHERE aid=2 ORDER BY id desc LIMIT 1 

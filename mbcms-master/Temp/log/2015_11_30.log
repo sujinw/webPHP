@@ -1,0 +1,38 @@
+[TIME]:2015-11-30 09:52:46ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Think\Db\Driver\.class.php类未找到 
+[TIME]:2015-11-30 09:54:07ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Think\Db\Driver\.class.php类未找到 
+[TIME]:2015-11-30 09:55:56ERROR:Call to undefined method Rbac::saveAccessList()E:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第27行} 
+[TIME]:2015-11-30 09:59:21ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:00:18ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:02:40ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:02:51ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:05:06ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:06:06ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:07:23ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:09:03ERROR:mysql错误：Table 'mbcms.mb_mb_user' doesn't exist<br />SQL:SELECT * FROM mb_mb_user LIMIT 1 
+[TIME]:2015-11-30 10:11:20ERROR:Call to undefined method Model::table()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第86行} 
+[TIME]:2015-11-30 10:14:45ERROR:Cannot access protected property Model::$tableE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第86行} 
+[TIME]:2015-11-30 10:16:23ERROR:mysql错误：Table 'mbcms.mb_user_role' doesn't exist<br />SQL:SELECT * FROM mb_role AS r,mb_user_role AS r_u WHERE r_u.rid = r.rid AND uid = '' 
+[TIME]:2015-11-30 10:20:38ERROR:mysql错误：Table 'mbcms.mb_user_role' doesn't exist<br />SQL:SELECT * FROM mb_role AS r,mb_user_role AS r_u WHERE r_u.rid = r.rid AND uid = '' 
+[TIME]:2015-11-30 10:24:29ERROR:mysql错误：Table 'mbcms.mb_user_role' doesn't exist<br />SQL:SELECT * FROM mb_role AS r,mb_user_role AS r_u WHERE r_u.role_id = r.id AND user_id = '' 
+[TIME]:2015-11-30 10:26:13ERROR:mysql错误：Table 'mbcms.mb_user_role' doesn't exist<br />SQL:SELECT * FROM mb_role AS r,mb_user_role AS r_u WHERE r_u.role_id = r.id AND user_id = '10' 
+[TIME]:2015-11-30 10:41:53ERROR:mysql错误：Table 'mbcms.role_user' doesn't exist<br />SQL:SELECT * FROM role_user 
+[TIME]:2015-11-30 10:52:23ERROR:Call to undefined method Model::fine()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第76行} 
+[TIME]:2015-11-30 10:54:10ERROR:mysql错误：Unknown column 'n.nid' in 'field list'<br />SQL:SELECT  n.nid AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.rid = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 10:54:52ERROR:mysql错误：Unknown column 'n.nid' in 'field list'<br />SQL:SELECT  n.nid AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.rid = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 10:56:52ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第139行} 
+[TIME]:2015-11-30 10:57:11ERROR:mysql错误：Unknown column 'n.node_id' in 'field list'<br />SQL:SELECT  n.node_id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.rid = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 10:57:41ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第139行} 
+[TIME]:2015-11-30 10:57:54ERROR:syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第139行} 
+[TIME]:2015-11-30 10:58:24ERROR:mysql错误：Unknown column 'n.node_id' in 'field list'<br />SQL:SELECT  n.node_id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.rid = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 10:59:24ERROR:mysql错误：Unknown column 'a.rid' in 'where clause'<br />SQL:SELECT  n.id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.rid = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 11:00:10ERROR:mysql错误：Unknown column 'a.rid' in 'where clause'<br />SQL:SELECT  n.id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.id = a.rid WHERE a.rid =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 11:01:53ERROR:mysql错误：Unknown column 'n.state' in 'where clause'<br />SQL:SELECT  n.id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.id = a.role_id WHERE a.role_id =1 AND n.state =1 AND r.state =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 11:02:15ERROR:mysql错误：Unknown column 'n.nid' in 'on clause'<br />SQL:SELECT  n.id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.nid = a.nid INNER JOIN mb_role AS r ON r.id = a.role_id WHERE a.role_id =1 AND n.status =1 AND r.status =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 11:03:02ERROR:mysql错误：Unknown column 'a.nid' in 'on clause'<br />SQL:SELECT  n.id AS n_nid, n.name AS n_name, n.title AS n_title,n.level AS n_level, n.pid AS n_pid FROM mb_node AS n INNER JOIN mb_access AS a ON n.id = a.nid INNER JOIN mb_role AS r ON r.id = a.role_id WHERE a.role_id =1 AND n.status =1 AND r.status =1 ORDER BY n.level,n.sort 
+[TIME]:2015-11-30 11:13:28ERROR:syntax error, unexpected ';'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\CommonController.class.php{第8行} 
+[TIME]:2015-11-30 13:59:58ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ 
+[TIME]:2015-11-30 14:00:35ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ 
+[TIME]:2015-11-30 14:09:00ERROR:mysql错误：Table 'mbcms.mb_' doesn't exist<br />SQL:SELECT * FROM mb_ 
+[TIME]:2015-11-30 14:09:46ERROR:Call to undefined function array_change_value_case()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第148行} 
+[TIME]:2015-11-30 14:11:25ERROR:Call to undefined function array_change_key_case_d()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第165行} 
+[TIME]:2015-11-30 14:11:50ERROR:Call to undefined function array_change_key_case_d()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第165行} 

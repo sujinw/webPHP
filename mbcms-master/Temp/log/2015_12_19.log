@@ -1,0 +1,28 @@
+[TIME]:2015-12-19 19:57:26ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第14行} 
+[TIME]:2015-12-19 19:58:05ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 19:58:07ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 19:58:38ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 19:58:57ERROR:syntax error, unexpected '='E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第12行} 
+[TIME]:2015-12-19 20:00:02ERROR:syntax error, unexpected '='E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第12行} 
+[TIME]:2015-12-19 20:00:03ERROR:syntax error, unexpected '='E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第12行} 
+[TIME]:2015-12-19 20:00:14ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 20:00:23ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 20:00:46ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 20:01:10ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第13行} 
+[TIME]:2015-12-19 20:02:38ERROR:Call to undefined method Model::getTemplate()E:\WEBPROJECT\PHP\myPHP\Index\Controller\CommonController.class.php{第12行} 
+[TIME]:2015-12-19 20:03:45ERROR:Call to undefined method TemplateModel::feild()E:\WEBPROJECT\PHP\myPHP\Common\Model\TemplateModel.class.php{第11行} 
+[TIME]:2015-12-19 21:24:05ERROR:E:/WEBPROJECT/PHP/myPHP/Index/Tpl/Index/http://127.0.0.1/WEBPROJECT/PHP/myPHP/template/defaultIndex/index.html模板文件不存在 
+[TIME]:2015-12-19 21:26:25ERROR:E:/WEBPROJECT/PHP/myPHP/Index/Tpl/Index/E:/WEBPROJECT/PHP/myPHP/MyPHP/template/default/Index/index.html模板文件不存在 
+[TIME]:2015-12-19 21:27:27ERROR:E:/WEBPROJECT/PHP/myPHP/Index/Tpl/Index/../aa.html模板文件不存在 
+[TIME]:2015-12-19 21:29:08ERROR:../aa.html模板文件不存在 
+[TIME]:2015-12-19 21:29:16ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/template/default/Index/index.html模板文件不存在 
+[TIME]:2015-12-19 21:35:51ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\template\default\Index\index.html"  on line 1312 "</html>" unclosed {#arclist#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第1312行} 
+[TIME]:2015-12-19 21:36:27ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\template\default\Index\index.html"  on line 1312 "</html>" unclosed {#arclist#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第1312行} 
+[TIME]:2015-12-19 21:36:29ERROR:Uncaught  --> Smarty Compiler: Syntax error in template "E:\WEBPROJECT\PHP\myPHP\template\default\Index\index.html"  on line 1312 "</html>" unclosed {#arclist#} tag <-- 
+  thrownE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\sysplugins\smarty_internal_templatecompilerbase.php{第1312行} 
+[TIME]:2015-12-19 21:36:53ERROR:Call to a member function where() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第56行} 
+[TIME]:2015-12-19 21:55:10ERROR:Call to a member function where() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第56行} 
+[TIME]:2015-12-19 21:55:38ERROR:Call to a member function where() on a non-objectE:\WEBPROJECT\PHP\myPHP\Common\Lib\SmartyPluTag.php{第56行} 
+[TIME]:2015-12-19 21:59:05ERROR:ViewController控制器中的index方法未找到呢~~~ 

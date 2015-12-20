@@ -1,0 +1,9 @@
+[TIME]:2015-12-04 17:32:08ERROR:ColumnController控制器中的add方法未找到呢~~~ 
+[TIME]:2015-12-04 17:32:19ERROR:ColumnController控制器中的add方法未找到呢~~~ 
+[TIME]:2015-12-04 17:32:53ERROR:ColumnController控制器中的add方法未找到呢~~~ 
+[TIME]:2015-12-04 17:42:33ERROR:syntax error, unexpected ',', expecting ')'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ColumnController.class.php{第8行} 
+[TIME]:2015-12-04 17:42:34ERROR:syntax error, unexpected ',', expecting ')'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\ColumnController.class.php{第8行} 
+[TIME]:2015-12-04 18:34:29ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Controller/EmptyController.class.php控制器未找到 
+[TIME]:2015-12-04 18:46:33ERROR:mysql错误：Unknown column 'display' in 'field list'<br />SQL:INSERT INTO mb_column (`name`,`parent_id`,`remark`,`display`,`creat_time`) VALUES ('社区','1','','1','1449225993') 
+[TIME]:2015-12-04 18:57:59ERROR:Smarty error: [in E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Column/add.html line 24]: syntax error: unrecognized tag: $v['id'] (Smarty_Compiler.class.php, line 446)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 
+[TIME]:2015-12-04 19:00:27ERROR:Smarty error: [in E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Column/add.html line 24]: syntax error: unrecognized tag: $v['id'] (Smarty_Compiler.class.php, line 446)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 

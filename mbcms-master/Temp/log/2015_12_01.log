@@ -1,0 +1,19 @@
+[TIME]:2015-12-01 17:22:07ERROR:mysql错误：Unknown column 'username' in 'where clause'<br />SQL:SELECT * FROM mb_user WHERE username='zhangsan' 
+[TIME]:2015-12-01 17:22:49ERROR:mysql错误：Table 'mbcms.mb_user_role' doesn't exist<br />SQL:SELECT * FROM mb_role AS r,mb_user_role AS r_u WHERE r_u.role_id = r.id AND user_id = '44' 
+[TIME]:2015-12-01 17:25:30ERROR:Call to undefined function error()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第267行} 
+[TIME]:2015-12-01 17:26:53ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:27:59ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:28:07ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:28:08ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:28:09ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:29:13ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:29:43ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:30:51ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:31:33ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 17:37:31ERROR:配置项:RBAC_NO_AUTH 设置错误必须为[控制器/方法]格式 
+[TIME]:2015-12-01 18:01:40ERROR:mysql错误：Unknown column 'admin' in 'where clause'<br />SQL:SELECT * FROM mb_user WHERE admin_username=admin LIMIT 1 
+[TIME]:2015-12-01 18:13:51ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第122行} 
+[TIME]:2015-12-01 18:13:53ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第122行} 
+[TIME]:2015-12-01 18:15:18ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第122行} 
+[TIME]:2015-12-01 18:16:09ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第124行} 
+[TIME]:2015-12-01 18:16:41ERROR:mysql错误：Unknown column 'nama' in 'where clause'<br />SQL:SELECT * FROM mb_node WHERE nama='Admin' LIMIT 1 

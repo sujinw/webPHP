@@ -1,0 +1,46 @@
+[TIME]:2015-11-29 10:33:56ERROR:syntax error, unexpected ';', expecting ')'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第91行} 
+[TIME]:2015-11-29 10:58:05ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Model.class.php{第226行} 
+[TIME]:2015-11-29 10:58:32ERROR:Cannot redeclare aL() (previously declared in E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php:483)E:\WEBPROJECT\PHP\myPHP\MyPHP\Libs\Functions\function.php{第483行} 
+[TIME]:2015-11-29 11:06:42ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第98行} 
+[TIME]:2015-11-29 11:06:44ERROR:syntax error, unexpected '->' (T_OBJECT_OPERATOR)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第98行} 
+[TIME]:2015-11-29 11:26:41ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1<br />SQL:SELECT * FROM mb_node LIMIT -5,5 
+[TIME]:2015-11-29 13:07:16ERROR:syntax error, unexpected '$this' (T_VARIABLE)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第11行} 
+[TIME]:2015-11-29 13:07:17ERROR:syntax error, unexpected '$this' (T_VARIABLE)E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第11行} 
+[TIME]:2015-11-29 13:08:27ERROR:mysql错误：Table 'mbcms.mb_admin' doesn't exist<br />SQL:SELECT count(*) FROM mb_admin 
+[TIME]:2015-11-29 13:08:28ERROR:mysql错误：Table 'mbcms.mb_admin' doesn't exist<br />SQL:SELECT count(*) FROM mb_admin 
+[TIME]:2015-11-29 13:08:49ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1<br />SQL:SELECT * FROM mb_user LIMIT -5,5 
+[TIME]:2015-11-29 13:08:51ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1<br />SQL:SELECT * FROM mb_user LIMIT -5,5 
+[TIME]:2015-11-29 13:09:25ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1<br />SQL:SELECT * FROM mb_user LIMIT -5,5 
+[TIME]:2015-11-29 13:20:17ERROR:E:/WEBPROJECT/PHP/myPHP/Admin/Tpl/Rbac/AddUser.html模板文件不存在 
+[TIME]:2015-11-29 14:47:44ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5,5' at line 1<br />SQL:SELECT * FROM mb_user LIMIT -5,5 
+[TIME]:2015-11-29 14:52:07ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第26行} 
+[TIME]:2015-11-29 14:52:09ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第26行} 
+[TIME]:2015-11-29 14:52:24ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第26行} 
+[TIME]:2015-11-29 14:52:25ERROR:syntax error, unexpected '}'E:\WEBPROJECT\PHP\myPHP\Admin\Controller\RbacController.class.php{第26行} 
+[TIME]:2015-11-29 15:02:04ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1<br />SQL:SELECT * FROM mb_user WHERE id= LIMIT 1 
+[TIME]:2015-11-29 15:02:05ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1<br />SQL:SELECT * FROM mb_user WHERE id= LIMIT 1 
+[TIME]:2015-11-29 15:02:07ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1<br />SQL:SELECT * FROM mb_user WHERE id= LIMIT 1 
+[TIME]:2015-11-29 15:02:14ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1<br />SQL:SELECT * FROM mb_user WHERE id= LIMIT 1 
+[TIME]:2015-11-29 16:28:25ERROR:LoginController控制器中的login_out方法未找到呢~~~ 
+[TIME]:2015-11-29 22:43:44ERROR:Call to undefined function session()E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第51行} 
+[TIME]:2015-11-29 23:03:44ERROR:Class 'Rbac' not foundE:\WEBPROJECT\PHP\myPHP\Admin\Controller\CommonController.class.php{第8行} 
+[TIME]:2015-11-29 23:04:30ERROR:Class 'RBAC' not foundE:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第27行} 
+[TIME]:2015-11-29 23:04:58ERROR:Class 'Rbac' not foundE:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第27行} 
+[TIME]:2015-11-29 23:05:44ERROR:Class 'Rbac' not foundE:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第27行} 
+[TIME]:2015-11-29 23:06:43ERROR:Class 'Rbac' not foundE:\WEBPROJECT\PHP\myPHP\Admin\Controller\LoginController.class.php{第27行} 
+[TIME]:2015-11-29 23:15:17ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Db.class.php类未找到 
+[TIME]:2015-11-29 23:18:42ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:19:28ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:21:04ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:21:34ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:22:22ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:22:49ERROR:syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)E:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:23:29ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:23:52ERROR:Class 'Db' not foundE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Rbac.class.php{第203行} 
+[TIME]:2015-11-29 23:25:16ERROR:Cannot redeclare class Think\DbE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Db.class.php{第17行} 
+[TIME]:2015-11-29 23:25:35ERROR:Cannot redeclare class Think\DbE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Db.class.php{第17行} 
+[TIME]:2015-11-29 23:25:59ERROR:Cannot redeclare class Think\DbE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Db.class.php{第17行} 
+[TIME]:2015-11-29 23:26:02ERROR:Cannot redeclare class Think\DbE:\WEBPROJECT\PHP\myPHP\MyPHP\Extends\Tool\Db.class.php{第17行} 
+[TIME]:2015-11-29 23:26:20ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Think\Db\Driver\.class.php类未找到 
+[TIME]:2015-11-29 23:27:54ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Think\Db\Driver\.class.php类未找到 
+[TIME]:2015-11-29 23:28:08ERROR:E:/WEBPROJECT/PHP/myPHP/MyPHP/Extends/Tool/Think\Db\Driver\.class.php类未找到 

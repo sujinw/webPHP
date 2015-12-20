@@ -1,0 +1,82 @@
+{#include file='../Common/header.html'#}
+
+<!--路径导航-->
+<ol class="breadcrumb breadcrumb_nav">
+    <li>首页</li>
+    <li class="active">管理员用户列表</li>
+</ol>
+<!--路径导航-->
+
+<div class="page-content">
+    <form class="form-inline">
+        <div class="panel panel-default">
+            <div class="panel-heading">管理员用户列表</div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th width="5%">ID</th>
+                        <th width="10%">用户名</th>
+                        <th width="10%">状态</th>
+                        <th width="15%">创建时间</th>
+                        <th width="15%">最后登陆时间</th>
+                        <th width="15%">最后登录IP</th>
+                        <th width="15%">管理权限</th>
+                        <th width="15%">操作</th>                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {#foreach from=$data item=r#}
+                    <tr>
+                        <td>{#$r.id#}</td>
+                        <td>{#$r.admin_username#}</td>
+                        <td>{#if $r.admin_islock eq 0#}正常{#else#}锁定{#/if#}</td>
+                        <td>{#$r.admin_creattime|date_format:'%Y-%m-%d'#}</td>
+                        <td>{#$r.admin_logintime|date_format:'%Y-%m-%d'#}</td>
+                        <td>{#$r.admin_loginip#}</td>
+                        <td>{#$r.admin_power#}</td>
+                        <td>
+                            <a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span> 编辑</a>
+                            <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> 删除</a>
+                        </td>
+                    </tr>
+                    {#/foreach#}
+                   </tbody>
+                </table>
+                <div class="admin-page">{#$page#}</div>
+            </div>
+        </div>
+    </form>
+</div>
+    <style>
+.admin-page{
+    text-align: right;
+    padding: 10px 15px;
+    height: auto;
+    overflow: hidden;
+    font-family: "Helvetica Neue", STHeiti, "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #036CB4;
+}
+.admin-page a {
+    padding: 5px 12px;
+    text-align: center;
+    margin: 3px 0px;    
+    border: solid 1px #E6E6E6;
+    color: #999;
+}
+.admin-page a:hover {
+    color: #2a6496;
+    background: #EEEEEE;
+}
+.admin-page .now_page{
+    border: solid 1px #499EF3;
+    background: #499EF3;
+    color: #fff;
+}
+    </style>
+}
+
+
+</body>
+</html>
