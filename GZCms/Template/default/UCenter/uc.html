@@ -1,0 +1,155 @@
+<gzinclude file="../../../../Template/default/Common/ucheader.html">
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="widget style1 navy-bg">
+                    <div class="row">
+                        <div class="col-xs-4"> <i class="fa fa-commenting fa-5x"></i>
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <span>评论留言</span>
+                            <h2 class="font-bold"><gz$data.reply_num></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="widget style1 red-bg">
+                    <div class="row">
+                        <div class="col-xs-4"> <i class="fa fa-book fa-5x"></i>
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <span>文章作品</span>
+                            <h2 class="font-bold"><gz$data.article_num></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="widget style1 lazur-bg">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <i class="fa fa-heart fa-5x"></i>
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <span>新消息</span>
+                            <h2 class="font-bold">260</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="widget style1 yellow-bg">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <i class="fa fa-gift fa-5x"></i>
+                        </div>
+                        <div class="col-xs-8 text-right">
+                            <span>我的积分</span>
+                            <h2 class="font-bold">12</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="widget-head-color-box navy-bg p-lg text-center">
+                    <div class="m-b-md">
+                        <h2 class="font-bold no-margins"><gz$data.userinfo.nickname></h2>
+                        <small>项目经理</small>
+                    </div>
+                    <img src="<gz$data.userinfo.user_img>" class="img-circle circle-border m-b-md img-head" alt="profile">
+                    <div>
+                        <span>100 动态</span>
+                        |
+                        <span>350 关注</span>
+                        |
+                        <span><gz$data.article_num> 文章数</span>
+                    </div>
+                </div>
+                <div class="widget-text-box">
+                    <h4 class="media-heading"><gz$data.userinfo.nickname></h4>
+                    <p><gz$data.userinfo.user_des></p>
+                    <div class="text-right">
+                        <a class="btn btn-xs btn-white">
+                            <i class="fa fa-thumbs-up"></i>
+                            赞
+                        </a>
+                        <a class="btn btn-xs btn-primary">
+                            <i class="fa fa-heart"></i>
+                            收藏
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="widget lazur-bg p-xl">
+                    <h2>Beaut-zihan</h2>
+                    <ul class="list-unstyled m-t-md">
+                        <li>
+                            <span class="fa fa-envelope m-r-xs"></span>
+                            <label>Email:</label>
+                            i@zi-han.net
+                        </li>
+                        <li>
+                            <span class="fa fa-home m-r-xs"></span>
+                            <label>Address:</label>
+                            上海市闵行区绿地科技岛广场A座2606室
+                        </li>
+                        <li>
+                            <span class="fa fa-phone m-r-xs"></span>
+                            <label>Contact:</label>
+                            (+020) 6780 3462
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="widget yellow-bg p-lg text-center">
+                    <div class="m-b-md"> <i class="fa fa-thumbs-up fa-4x"></i>
+                        <h1 class="m-xs">520</h1>
+                        <h3 class="font-bold no-margins">喜欢</h3>
+                        <small>账户</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>我最近的发布</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <gzforeach from=$data.article item=v>
+                        <p class="text-info"><a target="_blank" href="<gz$smarty.const.__APP__>?m=index&c=view&a=article&aid=<gz$v.aid>"><gz$v.title></a></p>
+                        <gz/foreach>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>我最近的评论</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <gzforeach from=$data.reply item=v>
+                        <p class="text-info"><a target="_blank" href="<gz$smarty.const.__APP__>?m=index&c=view&a=article&aid=<gz$v.aid>"><gz$v.rcontent></a></p>
+                        <gz/foreach>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/jquery.min.js?v=2.1.4"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/bootstrap.min.js?v=3.3.5"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/layer/layer.min.js"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/hplus.min.js?v=4.0.0"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/contabs.min.js"></script>
+</body>
+
+</html>

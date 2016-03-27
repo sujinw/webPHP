@@ -1,0 +1,39 @@
+<gzinclude file="../Common/inc/head.html">
+ <section>
+      <h2><strong style="color:grey;">添加格子会员等级</strong></h2>
+      <ul class="ulColumn2">
+      	<form name="addUserLever" id="adduserLever" action="<gzphp>echo U('addUserLever')<gz/php>" method="post" enctype='multipart/form-data'>
+       <li>
+        <span class="item_name" style="width:120px;">会员等级名称</span>
+        <input type="text" name="lever_name" id="username" class="textbox textbox_295" placeholder="会员等级名称" />
+        <span class="errorTips">错误提示信息...</span>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">会员等级说明</span>
+        <textarea placeholder="会员等级说明" name="lever_des" class="textarea" style="width:400px;height:50px;"></textarea>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;"></span>
+        <input type="submit" class="link_btn">
+       </li>
+       </form>
+      </ul>
+     </section>
+<script>
+$(function(){
+  $("#adduser").validate({
+    lever_name:{
+      rule:{
+        required: true,
+        ajax:{
+          url:"index.php?m=admin&c=user&a=addUserLever"
+        }
+      },
+      error:{
+        required: "等级名称不能为空",
+        ajax:"等级已经存在"
+     }
+    }
+});
+})
+</script>

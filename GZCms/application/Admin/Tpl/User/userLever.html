@@ -1,0 +1,30 @@
+<gzinclude file="../Common/inc/head.html">
+     <section>
+<!--左右分栏：左侧栏目-->
+        <div class="page_title">
+            <h2 class="fl">格子会员等级列表</h2>
+            <a href="<gzphp>echo U('Admin/User/addUserLever')<gz/php>" class="fr top_rt_btn">添加新的会员等级</a>
+        </div>
+       <div class="cont_col_lt mCustomScrollbar" style="width:900px">
+           <table class="table fl">
+            <tr>
+             <th>id</th>
+             <th>等级名称</th>
+             <th>等级说明</th>
+             <th>操作</th>
+            </tr>
+            <gz foreach from=$lever item=v>
+            <tr>
+             <td class="center" style="width:20%"><gz$v.lever_id></td>
+             <td class="center" style="width:20%"><gz$v.lever_name></td>
+             <td class="center" style="width:30%"><gz$v.lever_des></td>
+             <td class="center"><a class="inner_btn">编辑</a><a class="inner_btn">删除</a></td>
+            </tr>
+            <gz/foreach>
+           </table>
+       <aside class="paging" style="clear: both;float: none;">
+            <gz$page>
+        </aside>
+           
+       </div>
+   </section>

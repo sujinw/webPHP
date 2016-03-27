@@ -1,0 +1,15 @@
+[TIME]:2016-03-22 10:37:08ERROR:Model和Common/Model未找到操作模型！ 
+[TIME]:2016-03-22 10:39:22ERROR:E:/WEBPROJECT/PHP/GZCms/MyPHP/Extends/Tool/Control.class.php类未找到 
+[TIME]:2016-03-22 11:12:50ERROR:E:/WEBPROJECT/PHP/GZCms/MyPHP/Extends/Tool/Control.class.php类未找到 
+[TIME]:2016-03-22 11:13:24ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Controller/EmptyController.class.php控制器未找到 
+[TIME]:2016-03-22 11:13:57ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:14:22ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:14:25ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:14:52ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:14:53ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:14:54ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:15:20ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:15:54ERROR:Smarty error: the $compile_dir 'E:/WEBPROJECT/PHP/GZCms/application/Temp/Compile/Install/' does not exist, or is not a directory.E:\WEBPROJECT\PHP\GZCms\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 
+[TIME]:2016-03-22 11:15:56ERROR:Smarty error: the $compile_dir 'E:/WEBPROJECT/PHP/GZCms/application/Temp/Compile/Install/' does not exist, or is not a directory.E:\WEBPROJECT\PHP\GZCms\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 
+[TIME]:2016-03-22 11:16:27ERROR:E:/WEBPROJECT/PHP/GZCms/application/Install/Tpl/Index/Index.html模板文件不存在 
+[TIME]:2016-03-22 11:16:43ERROR:Smarty error: the $compile_dir 'E:/WEBPROJECT/PHP/GZCms/application/Temp/Compile/Install/' does not exist, or is not a directory.E:\WEBPROJECT\PHP\GZCms\MyPHP\Extends\Org\Smarty\Smarty.class.php{第1093行} 

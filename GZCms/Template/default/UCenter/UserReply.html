@@ -1,0 +1,44 @@
+<gzinclude file="../../../../Template/default/Common/ucheader.html">
+<body class="gray-bg">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content">
+            <div class="row animated fadeInRight">
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="" id="ibox-content">
+                            <gzif $res eq 0>没有数据哦~~~<gzelse>
+                                <gzforeach from=$res item=v>
+
+                            <div id="vertical-timeline" class="vertical-container light-timeline">
+                                <div class="vertical-timeline-block">
+                                    <div class="vertical-timeline-icon navy-bg">
+                                        <i class="fa fa-coffee"></i>
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <h2><gz$v.title></gz></h2>
+                                        <p><gz$v.rcontent></gz></p>
+                                            <span class="vertical-date">
+                                             <small><gz$v.time></small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <gz/foreach><gz/if>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="<gz$smarty.const.__TPUBLIC__>/js/jquery.min.js?v=2.1.4"></script>
+<script src="<gz$smarty.const.__TPUBLIC__>/js/bootstrap.min.js?v=3.3.5"></script>
+<script src="<gz$smarty.const.__TPUBLIC__>/js/content.min.js?v=1.0.0"></script>
+<script>
+    $(document).ready(function(){$("#lightVersion").click(function(event){event.preventDefault();$("#ibox-content").removeClass("ibox-content");$("#vertical-timeline").removeClass("dark-timeline");$("#vertical-timeline").addClass("light-timeline")});$("#darkVersion").click(function(event){event.preventDefault();$("#ibox-content").addClass("ibox-content");$("#vertical-timeline").removeClass("light-timeline");$("#vertical-timeline").addClass("dark-timeline")});$("#leftVersion").click(function(event){event.preventDefault();$("#vertical-timeline").toggleClass("center-orientation")})});
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<gzinclude file="../Common/inc/head.html">
+ <section>
+      <h2><strong style="color:grey;">添加格子会员</strong></h2>
+      <ul class="ulColumn2">
+      	<form name="adduser" id="adduser" action="<gzphp>echo U('addUser')<gz/php>" method="post" enctype='multipart/form-data'>
+       <li>
+        <span class="item_name" style="width:120px;">会员用户名</span>
+        <input type="text" name="username" id="username" class="textbox textbox_295" placeholder="用户名" />
+        <span class="errorTips">错误提示信息...</span>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">会员密码</span> 
+        <input type="password" name="password" class="textbox textbox_295" placeholder="会员密码" onblur="" />       
+        <span class="errorTips">错误提示信息...</span>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">年龄</span> 
+        <input type="number" name="yearold" class="textbox textbox_295" placeholder="年龄"/>       
+       </li>  
+       <li>
+        <span class="item_name" style="width:120px;">性别</span>
+        <select class="select" name="sex">
+         <option value="1">男</option>
+         <option value="2">女</option>
+        </select>
+       </li>     
+       <li>
+        <span class="item_name" style="width:120px;">是否锁定</span>
+        <label class="single_selection"><input type="radio" name="is_lock" value="1"/>是</label>
+        <label class="single_selection"><input type="radio" name="is_lock" checked value="0"/>否</label>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">会员头像</span>
+        <label class="uploadImg">
+         <input type="file" id="user_img" name="user_img" />
+         <span>上传头像</span>
+         <div id="imgdiv"><img id="imgShow" width="100" height="100" /></div>
+        </label>
+        
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">会员签名</span>
+        <textarea placeholder="会员签名" name="user_des" class="textarea" style="width:400px;height:50px;"></textarea>
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;"></span>
+        <input type="submit" class="link_btn">
+       </li>
+       </form>
+      </ul>
+     </section>
+<script>
+$(function(){
+  $("#adduser").validate({
+    username:{
+      rule:{
+        required: true,
+        regexp:/^\w{4,16}$/,
+        ajax:{
+          url:"index.php?m=admin&c=user&a=ajaxUser",
+          // data:{'username':$('#username').val()}
+      }
+    },
+      error:{
+        required: " 用户名不能为空 ",
+        ajax: " 用户名已经存在 ",
+        regexp:"用户名为4-16位的字母数字下划线"
+      }
+    },
+    password:{
+      rule:{
+        required: true,
+        regexp:/^\w{6,32}$/
+      },
+      error:{
+        required:"密码不能为空",
+        regexp:"密码为6-16位的数字字母下划线"
+      }
+    },
+    yearold:{
+      rule:{
+        required: true,
+        num:'1,150'
+      }
+    },
+    nickname:{
+      required: true
+    }
+
+  })
+
+   new uploadPreview({ UpBtn: "user_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+})
+
+</script>

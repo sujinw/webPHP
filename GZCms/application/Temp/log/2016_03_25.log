@@ -1,0 +1,7 @@
+[TIME]:2016-03-25 16:45:03ERROR:require(): Failed opening required 'E:/WEBPROJECT/PHP/GZCms/application/CommonConfig/db.inc.php' (include_path='.;C:\php\pear')E:\WEBPROJECT\PHP\GZCms\application\install\Controller\IndexController.class.php{第85行} 
+[TIME]:2016-03-25 16:45:42ERROR:require(): Failed opening required 'E:/WEBPROJECT/PHP/GZCms/application/CommonConfig/db.inc.php' (include_path='.;C:\php\pear')E:\WEBPROJECT\PHP\GZCms\application\install\Controller\IndexController.class.php{第85行} 
+[TIME]:2016-03-25 16:45:57ERROR:require(): Failed opening required 'E:/WEBPROJECT/PHP/GZCms/application/CommonConfig/db.inc.php' (include_path='.;C:\php\pear')E:\WEBPROJECT\PHP\GZCms\application\install\Controller\IndexController.class.php{第85行} 
+[TIME]:2016-03-25 16:46:26ERROR:Call to undefined method Model::save()E:\WEBPROJECT\PHP\GZCms\application\install\Controller\IndexController.class.php{第92行} 
+[TIME]:2016-03-25 16:46:49ERROR:mysql错误：Table 'hdcms.hd_config' doesn't exist<br />SQL:UPDATE hd_config SET `value`='HDCMS内容管理系统' WHERE Array 
+[TIME]:2016-03-25 16:53:48ERROR:syntax error, unexpected 'foreach' (T_FOREACH)E:\WEBPROJECT\PHP\GZCms\application\install\Controller\IndexController.class.php{第92行} 
+[TIME]:2016-03-25 16:56:45ERROR:mysql错误：Table 'hdcms.hd_config' doesn't exist<br />SQL:UPDATE hd_config SET `value`='HDCMS内容管理系统' WHERE Array 

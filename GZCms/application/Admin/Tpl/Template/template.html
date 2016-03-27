@@ -1,0 +1,34 @@
+<gzinclude file="../Common/inc/head.html">
+<section>
+      <div class="page_title">
+       <h2 class="fl">前台模板管理控制器</h2>
+       <a href="<gzphp>echo U('addTemplate');<gz/php>" class="fr top_rt_btn">新建模板</a>
+      </div>
+      <table class="table">
+       <tr>
+        <th>缩略图</th>
+        <th>模板名称</th>
+        <th>模板描述</th>
+        <th>模板版本</th>
+        <th>模板作者</th>
+        <th>版权说明</th>
+        <th>创建时间</th>
+        <th>操作</th>
+       </tr>
+       <gz foreach from=$template item=v>
+       <tr>
+        <td style="width:150px;"><img style="width:100px;height:100px;" src="<gz $v.thumb>" /></td>
+        <td><gz$v.tname></td>
+        <td><gz$v.tremark></td>
+        <td><gz$v.tversion></td>
+        <td><gz$v.tauthor></td>
+        <td><gz$v.tcopyright></td>
+        <td><gz$v.create_time|date_format:'%Y-%m-%d'></td>
+        <td>
+        <gz if $v.selected eq 1><a href="#" >当前模板</a><gzelse><a href="<gz$smarty.const.__APP__>?m=admin&c=template&a=selectTemplate&tid=<gz$v.tid>">选择此模板</a><gz/if>
+         <a href="#" class="inner_btn">编辑模板</a>
+        </td>
+       </tr>
+       <gz/foreach>
+      </table>
+     </section>

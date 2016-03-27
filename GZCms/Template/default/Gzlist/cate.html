@@ -1,0 +1,49 @@
+<gzinclude file="../../../../Template/default/Common/header.html">
+<div class="list-1">
+	<ul>
+		<gzarclist cid=$cid row=7 name="a1">
+		<li class="list-item">
+			<a href="[$a1.url]">
+				<img src="[$a1.thumb]" alt="">
+				<p class="list-title">
+					<span class="ml-icon">目录一</span>
+					[$a1.title]
+				</p>
+				<div class="list-des">
+					[$a1.excerpt]
+				</div>
+				<div class="list-icon">
+					<span>
+						<span class="fui-time"></span>
+						[$a1.create_time]
+					</span>
+					<span>
+						<span class="fui-chat"></span>
+						暂无评论
+					</span>
+					<span>
+						<span class="fui-heart"></span>
+						1人喜欢
+					</span>
+				</div>
+			</a>
+		</li>
+		<gz/arclist>
+	</ul>
+</div>
+	</section>
+<section class="pop_bg">
+      <div class="pop_cont">
+       <!--title-->
+       <h3>正在点赞</h3>
+       <!--以pop_cont_text分界-->
+       <div class="pop_cont_text">
+        <p>点赞失败，请重新尝试，或者联系管理员处理！</p>
+       </div>
+       <!--bottom:operate->button-->
+       <div class="btm_btn">
+        <input type="button" value="确认" class="input_btn trueBtn"/>
+       </div>
+      </div>
+     </section>
+<gzinclude file="../../../../Template/default/Common/footer.html">

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>MultiSteps</title>
+<link rel="stylesheet" type="text/css" href="web/css/reset.css">
+<link rel="stylesheet" type="text/css" href="web/css/led/global.css">
+<link rel="stylesheet" type="text/css" href="web/css/led/multiSteps.css">
+<script type="text/javascript" src="web/script/jquery/core/1.42/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="web/script/jquery/plugin/multiSteps.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="web/script/common/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<div style='position:absolute; width:99%; left:6px;top:15px; height:500px; background:#888;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=5);-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=5)"';></div>
+<![endif]-->
+<!--
+	此处模拟了IE9以下版本的阴影效果,
+	何种情况使用滤镜请根据自身慎重考虑。
+    此段内容删除，ie下滑动会更加平滑。
+-->
+ <section id="main" class="main-wrap pr oh" style=" height:500px;">
+      <article class="step-father">
+      <h2 style="height: 34px;line-height: 34px;font-size: 18px;background: #ccc;padding-left: 10px;">gzcms安装程序</h2>
+        <div class="demo">
+            <ul class="clearfix">
+                <li>
+                    面包屑一 <em></em> <i></i>
+                </li>
+                <li class="current">
+                    面包屑二 <em></em> <i></i>
+                </li>
+                <li>
+                    面包屑二
+                    <em></em>
+                    <i></i>
+                </li>
+                <li>
+                    面包屑二
+                    <em></em>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+
+      	<div class="step_1 form_step">
+        	<section class="form_content p10 clearfix">
+                <img class="fl mr10" alt="Step 1" src="web/images/step_1.gif">
+                <h1 class="f20 pt10 pb5">第一步 阅读许可协议</h1>
+                <p class="title2">请认真阅读本系统许可协议！</p>
+                <p class="block cl pb10 pl15 pr15"><div>
+                    <textarea style=" width: 440px;height: 80px;"></textarea>
+                </div><input type="checkbox" /><a href="">我已经阅读过了本系统的安装协议</a></p>
+                <div class="button_container pr p8">
+                	<a id="step_one" class="block buttons btn-step1 pa ti" onClick="; return false;"  href="#">下一步</a>
+                </div>
+            </section>
+        </div>
+        <div class="step_2 form_step">
+        	<section class="form_content p10 clearfix">
+                <img class="fl mr10" alt="Step 2" src="web/images/step_2.gif">
+                <h1 class="f20 pt10 pb5">第二步骤</h1>
+                <p class="title2">副标题或者简单介绍</p>
+                <p class="block cl pb10 pl15 pr15">正文内容<br>正文内容<br>正文内容<br>正文内容</p>
+                <div class="button_container pr p8">
+                	<a href="javascript:void(0)" class="prevStep">上一步</a>
+                	<a id="step_two" class="block buttons btn-step2 ti pa" onClick="; return false;"  href="#">下一步</a>
+                </div>
+                <div class="notice tr pr15"><span class="red">注意事项</span></div>
+            </section>
+        </div>
+        <div class="step_3 form_step">
+        	<section class="form_content p10 clearfix">
+                <img class="fl mr10" alt="Step 3" src="web/images/step_3.gif">
+                <h1 class="f20 pt10 pb5">第三步完成步骤</h1>
+                <p class="title2">副标题或者简单介绍</p>
+                <p class="block cl pb10 pl15 pr15">正文内容<br>正文内容<br>正文内容<br>正文内容</p>
+                <div class="button_container pr p8">
+                	<a href="javascript:void(0)" class="prevStep">上一步</a>
+                	<a id="step_three" class="block buttons btn-step3 ti pa" onClick="; return false;"  href="#">下一步</a>
+                </div>
+                <div class="notice tr pr15"><span class="red">注意事项</span></div>
+            </section>
+        </div>
+
+        <div class="step_4 form_step">
+            <section class="form_content p10 clearfix">
+                <img class="fl mr10" alt="Step 3" src="web/images/step_3.gif">
+                <h1 class="f20 pt10 pb5">第三步完成步骤</h1>
+                <p class="title2">副标题或者简单介绍</p>
+                <p class="block cl pb10 pl15 pr15">正文内容<br>正文内容<br>正文内容<br>正文内容</p>
+                <div class="button_container pr p8">
+                    <a href="javascript:void(0)" class="prevStep">上一步</a>
+                    <a id="step_three" class="block buttons btn-step3 ti pa" onClick="; return false;"  href="#">下一步</a>
+                </div>
+                <div class="notice tr pr15"><span class="red">注意事项</span></div>
+            </section>
+        </div>
+      </article>
+ </section>
+</body>
+<script language="javascript">
+$(function(){
+	/*
+		插件的上一步操作，只进行了简单的可逆操作，
+		宽度自适应的时候会存在问题:
+			当前步骤的前（后）两步在页面放大之后会出现在视野中，需要注意。
+	解决：
+		getSteps中增加返回值oldstep（当前步骤的前（后）两步）
+		然后在styleSteps中的left或right定位设置为一个不可见位置即可。
+		可等待我发布下一版本修订或者自己修改（修改后请告知,谢谢。)
+	Email: Ethan.zhu83@gmail.com
+	  QQ : 12377166
+	*/
+	var _beforeSlide = function(){
+		var finishTag = true;
+		alert("现在开始执行第一步，\n插件中默认返回值为true，\n如果返回值为false则不往下执行。");
+		return finishTag; //false不执行
+	};
+	var _callback = function(){
+		alert("第一步执行完成，\n这里没有返回值判断，\n可以根据需要自行设置。");	
+	}
+	$("#step_one").multiSteps({beforeSlide:_beforeSlide,callback:_callback});
+	$(".prevStep").multiSteps({slidefor:'prev'});
+	$("#step_two").multiSteps({callback:function(){alert("第二步执行完成")}});
+	$("#step_three").click(function(){
+		window.location.reload(); 
+	});
+	
+});
+</script>
+</html>

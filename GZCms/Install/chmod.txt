@@ -1,0 +1,3 @@
+application/Temp/*
+application/Common/Config/*
+template/*

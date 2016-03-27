@@ -1,0 +1,43 @@
+<gzinclude file="../../../../Template/default/Common/ucheader.html">
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight blog">
+        <div class="row">
+            <div class="col-lg-4">
+                <gzif $data.article_num eq 0>您还有发表过文章，现在就去<a href="<gz$smarty.const.__APP__>?m=Index&c=Ucenter&a=tougao&uid=<gz$uid>" class="btn btn-primary m-t">分享我的原创作品</a><gzelse>
+            	<gzforeach from=$data.article item=v>
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <a href="<gz$smarty.const.__APP__>?m=index&c=view&a=article&aid=<gz$v.aid>" class="btn-link">
+                            <h2><gz$v.title></h2>
+                        </a>
+                        <div class="small m-b-xs">
+                            <strong><gz$v.author></strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 3 小时前</span>
+                        </div>
+                        <p><gz$v.excerpt></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>标签：</h5>
+                                <button class="btn btn-primary btn-xs" type="button">Apple Watch</button>
+                                <button class="btn btn-white btn-xs" type="button">速比涛</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>状态：</h5>
+                                    <div> <i class="fa fa-comments-o"> </i> <gz$data.reply_num> 评论 </div>
+                                    <i class="fa fa-eye"> </i> <gz$v.hits> 浏览
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <gz/foreach>
+                <gz/if>
+            </div>
+        </div>
+    </div>
+    <script src="<gz$smarty.const.__TPUBLIC__>/js/jquery.min.js?v=2.1.4"></script>
+    <script src="<gz$smarty.const.__TPUBLIC__>/js/bootstrap.min.js?v=3.3.5"></script>
+    <script src="<gz$smarty.const.__TPUBLIC__>/js/content.min.js?v=4.0.0"></script>
+</body>
+
+</html>

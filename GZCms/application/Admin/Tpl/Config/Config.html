@@ -1,0 +1,18 @@
+<gzinclude file="../Common/inc/head.html">
+<section>
+	<h2><strong style="color:grey;">分列内容布局</strong></h2>
+	<ul class="ulColumn2">
+		<form action="<gz$smarty.const.__APP__>?m=admin&c=config&a=set_config" method="post">
+			<gzforeach from=$config item=v>
+			<li>
+				<span class="item_name" style="width:120px;"><gz$v.title>：</span>
+				<gz$v.html>
+			</li>
+			<gz/foreach>
+			<li>
+				<span class="item_name" style="width:120px;"></span>
+				<input type="submit" class="link_btn"/>
+			</li>
+		</form>
+	</ul>
+</section>

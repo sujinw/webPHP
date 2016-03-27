@@ -1,0 +1,73 @@
+<gzinclude file="../../../../Template/default/Common/header.html">
+		<div class="article-container mt10">
+			<div class="article-header">
+				<h3 class="title"><gz$article.title></h3>
+				<div class="article-info">
+					<span class="info-item">作者:<gz$article.author></span>
+					<span class="info-item">发表时间:<gz$article.create_time|date_format:'%Y-%m-%d'></span>
+					<span class="info-item">分类:</span>
+					<span class="info-item">文章点击:<gz$article.hits></span>
+				</div>
+			</div>
+			<div class="article-content">
+				<div class="content"><gz$article.details>
+				</div>
+				<div class="articlepage">
+					<gzpagenext style="all"><gz/pagenext>
+				</div>
+				<div class="article-reply clear">
+					<div id="comments">
+						<div class="comment-post" id="comment-post">
+							<h3 style="margin-bottom:-20px;margin-top:5px">发表评论</h3>
+							<form name="re" action="<gzphp>echo U('addReply');<gz/php>" method="post">
+								<p class="num">文明评论，重在参与</p>
+								<p>
+									<textarea name="rcontent" rows="10" class="post-area" placeholder="快来发表你的看法和意见吧!" style="width:99%"></textarea>
+								</p>			
+								<div class="gdpl">
+									<div title="评论" class="face">
+										<a href="javascript:void(0);">评论(0)</a>
+									</div>
+									<input type="hidden" name="aid" value="<gz$smarty.get.aid>">
+									<gzif $uid eq 0><a href="<gzphp>echo U('Index/Login/login');<gz/php>" id="submit">登录/注册</a><gzelse>
+									<input type="hidden" name="uid" value="<gz$uid>">
+									<input type="submit" name="go" class="open2" id="submit" value="发表评论"><gz/if></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="pjlist">
+					<gzif $rep eq 0>暂无评论，赶紧抢沙发吧~~<gzelse>
+					<gzforeach from=$rep item=v>
+					<div class="social-feed-box">
+						<div class="social-avatar">
+							<a href="" class="pull-left">
+								<img alt="image" src="<gz$v.user_img>"></a>
+							<div class="media-body">
+								<a href="#"><gz$v.nickname></a>
+								<small class="text-muted"><gz$v.time></small>
+							</div>
+						</div>
+						<div class="social-body">
+
+							<div class="pull-right">
+								<!-- <a class="btn btn-xs btn-white" href="javascript:;" onclick="articleZan(this,<gz$v.rid>)"> <i class="fa fa-thumbs-up"></i>
+									(<gz$v.zan>)赞
+								</a> -->
+								<a class="btn btn-xs btn-white"> <i class="fa fa-heart"></i>
+									收藏
+								</a>
+								<a class="btn btn-xs btn-primary">
+									<i class="fa fa-pencil"></i>
+									评论
+								</a>
+							</div>
+							<p><gz$v.rcontent></p>
+						</div>
+					</div>
+					<gz/foreach>
+					<gz/if>
+				</div>
+			</div>
+		</div>
+<gzinclude file="../../../../Template/default/Common/footer.html">

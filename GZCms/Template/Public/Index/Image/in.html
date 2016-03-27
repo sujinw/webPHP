@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+	.yp-header {
+    	display: block;
+    	background: #fafafa;
+	}
+	.yp-header-top {
+    height: 80px;
+    background: #FCFCFC;
+}
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.clr {
+    zoom: 1;
+}
+.yp-header-logo {
+    float: left;
+    padding-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+.yp-header-logo img {
+    float: left;
+}
+fieldset, img {
+    border: 0;
+}
+.yp-header-logo span h1 {
+    display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+.yp-header-logo span {
+    display: block;
+    line-height: 52px;
+    float: left;
+    padding-left: 3px;
+    color: #606060;
+    font-size: 14px;
+}
+.yp-header-message {
+    float: right;
+    width: 63px;
+    position: relative;
+}
+
+.yp-header-message .bell {
+    position: relative;
+    display: block;
+    width: 63px;
+    height: 80px;
+    border: 1px solid #FCFCFC;
+    border-top: 0;
+    border-bottom: 0;
+}
+.yp-header-message .ico {
+    width: 26px;
+    height: 35px;
+    background: url(dang.png) no-repeat center center;
+    display: block;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 102;
+    top: 19px;
+    margin: 0 auto;
+}
+.yp-header-message .bell .count {
+    display: none;
+}
+.yp-header-user {
+    position: relative;
+    float: right;
+    /* margin-top: 19px; */
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 18px;
+    border: 1px solid transparent;
+}
+.yp-header-user .user-main {
+    position: relative;
+    overflow: hidden;
+    padding-right: 15px;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    cursor: pointer;
+}
+.yp-header-user .avatar {
+    float: left;
+}
+.yp-header-user .avatar img {
+    display: block;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.yp-header-user .nickname {
+    float: left;
+    padding: 0 5px 0 8px;
+    height: 45px;
+    color: #6f6f6f;
+    font-size: 14px;
+    line-height: 45px;
+    max-width: 67px;
+    min-width: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.yp-header-user .user-main .arrow {
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    display: block;
+    margin-top: -2px;
+    width: 10px;
+    height: 5px;
+    background: url(../image/yp_spirit.png) no-repeat 0 -33px;
+}
+.yp-header-user .user-link {
+    position: absolute;
+    top: 79px;
+    left: -1px;
+    z-index: 101;
+    display: none;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+    /* border-bottom: 0; */
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.yp-header-user .user-link li {
+    border-top: 1px solid #FCFCFC;
+}
+.yp-header-user .user-link a {
+    display: block;
+    padding: 10px 18px;
+    color: #888;
+    font-size: 14px;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+.yp-header-user .user-link li i {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+    display: inline-block;
+    background: url(useCenter.png) no-repeat;
+}
+.yp-header-user .user-link li.l1 i {
+    background-position: -6px -29px;
+    width: 17px;
+    height: 19px;
+    left: 3px;
+    margin-right: 11px;
+}
+
+.yp-header-user .user-link li.l2 i {
+    background-position: -6px -58px;
+    width: 16px;
+    height: 17px;
+    left: 3px;
+    margin-right: 13px;
+}
+.yp-header-search {
+    float: right;
+    margin-top: 18px;
+    /* margin-bottom: 20px; */
+    width: 292px;
+    height: 42px;
+    border: 1px solid #E6E6E6;
+    line-height: 30px\0;
+    margin-right: 20px;
+}
+.yp-header-search .searchType {
+    float: left;
+    width: 64px;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #888;
+}
+.yp-header-search .searchType .sehType-name {
+    height: 20px;
+    line-height: 20px;
+    margin: 11px 0;
+    cursor: pointer;
+    border-right: 1px solid #E6E6E6;
+}
+.yp-header-search .searchType .sehType-list {
+    display: none;
+    position: absolute;
+    z-index: 101;
+    left: -1px;
+    top: 42px;
+    background: #fff;
+    width: 63px;
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    border-top: 0;
+}
+.yp-header-search .searchType .sehType-list p {
+    line-height: 30px;
+    cursor: pointer;
+}
+.yp-header-search .text {
+    float: left;
+    padding-left: 5px;
+    width: 180px;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-size: 14px;
+    color: #abaaaa;
+}
+.yp-header-search .submit {
+    float: right;
+    width: 42px;
+    height: 100%;
+    border: 0;
+    background: url(yp_spirit.png) no-repeat -76px 10px;
+    cursor: pointer;
+}
+.clr:after {
+    clear: both;
+    content: '\0020';
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+.yp-header-nav {
+    height: 50px;
+    position: relative;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #CDCDCD;
+}
+.yp-header-nav .nav_wrap {
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    background: #fafafa;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.yp-header-menu {
+    position: relative;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+ul,li {
+    list-style: none;
+}
+.yp-header-menu li {
+    position: relative;
+}
+.yp-header-menu li {
+    float: left;
+}
+.yp-header-menu li a {
+    display: block;
+    padding: 0 25px;
+    color: #333;
+    cursor: pointer;
+}
+.yp-header-nav.nav-fixed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: .95;
+}
+	</style>
+</head>
+<body>
+	<header class="yp-header">
+		<div class="yp-header-top  inner clr">
+			<a class="yp-header-logo" href="http://www.leiphone.com">
+				<img src="http://www.leiphone.com/resWeb/images/common/lp_logo.png" height="52" alt="logo">
+				<span>
+					读懂
+					<h1>移动互联网</h1>
+					&未来
+				</span>
+			</a>
+			<div class="yp-header-message">
+				<a class="bell" href="http://home.leiphone.com"> <i class="ico"></i> <em class="count"></em>
+				</a>
+				<!-- 这一块是测试用的 ， 测试完毕删除 -->
+
+				<!-- 这一块是测试用的 ， 测试完毕删除 -->
+			</div>
+			<div class="yp-header-user-box">
+				<div class="yp-header-user">
+					<div class="user-main">
+						<div class="avatar">
+							<img width="36" height="36" src="http://www.leiphone.com/resWeb/home/images/member/noLogin.jpg" alt=""></div>
+						<span class="nickname">用户</span>
+						<span class="arrow"></span>
+					</div>
+					<div class="user-link">
+						<ul>
+							<!-- <li class="l1">
+							<a href="#"> <i></i>
+								登录
+							</a>
+						</li>
+						<li class="l2">
+							<a href="#">
+								<i></i>
+								注册
+							</a>
+						</li>
+						<li class="l3">
+							<a href="#">
+								<i></i>
+								个人中心
+							</a>
+						</li>
+						<li class="l4">
+							<a href="#">
+								<i></i>
+								退出
+							</a>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="yp-header-search">
+			<form method="GET" action="http://www.leiphone.com/search" style="height: 100%;">
+				<div class="searchType">
+					<div class="sehType-name">
+						<span class="site-name">全站</span>
+						<span class='arrow'></span>
+					</div>
+					<div class="sehType-list">
+						<!-- 试用：site=tryout,海淘：site=haitao,产品：site=product -->
+						<p data-type='tryout'>试用</p>
+						<p data-type='product'>产品</p>
+						<p data-type='haitao'>海淘</p>
+					</div>
+				</div>
+				<input type="hidden" name="site" value="">
+				<input class="text" type="text" name="s" autocomplete="off" value="">
+				<input class="submit" type="submit" value=""></form>
+		</div>
+	</div>
+	<nav class="yp-header-nav nav-static">
+		<div class="nav_wrap">
+			<div class="inner clr">
+				<div class="yp-header-menu">
+					<span class="arrow"></span>
+					<ul>
+						<li class="active ">
+							<a href="http://www.leiphone.com">首页</a>
+						</li>
+
+						<li class="ej " data-dl="newsDl">
+							<a href="javascript:;" >
+								新闻
+								<span class="arro"></span>
+							</a>
+							<div class="news-menu">
+								<div class="dline">
+									<a href="http://www.leiphone.com/category/faxian">发现</a>
+									<span>|</span>
+									<a href="http://www.leiphone.com/category/sponsor">业界</a>
+								</div>
+								<div class="dline">
+									<a href="http://www.leiphone.com/specials">专题</a>
+									<span>|</span>
+									<a href="http://www.leiphone.com/category/long">长文章</a>
+								</div>
+								<!--
+                                <div class="dline">
+								<a href="http://www.leiphone.com/category/zixun">新鲜</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/weiwu">唯物</a>
+							</div>
+							<div class="dline">
+								<a href="http://www.leiphone.com/authorSpecial">专栏</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/texie">特写</a>
+							</div>
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/sponsor">发现</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/specials">专题</a>
+							</div>
+							<div class="flag-link">
+								<a href="http://www.leiphone.com/category/chuangye"> <em></em>
+									先锋志
+								</a>
+							</div>
+							-->
+						</div>
+					</li>
+					<li class="ej ">
+						<a href="http://maker.leiphone.com" >
+							硬创邦
+							<span class="arro"></span>
+						</a>
+						<div class="news-menu">
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/ingchuang">创客</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/naodong">脑洞</a>
+							</div>
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/chuangma">创马</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/diyer">DIY</a>
+							</div>
+						</div>
+					</li>
+
+					<li class="ej " data-dl="newsDl">
+						<a href="http://7.leiphone.com" >
+							爱搞机
+							<span class="arro"></span>
+						</a>
+						<div class="news-menu">
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/chai">评测</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/talks">机观</a>
+							</div>
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/science">科普</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/category/91chai">91拆</a>
+							</div>
+							<div class="dline">
+								<a href="http://www.leiphone.com/category/tiyan">体验</a>
+								<span>|</span>
+								<a href="http://www.leiphone.com/video">视频</a>
+							</div>
+							<!-- <div class="video-link">
+							<a href="http://www.leiphone.com/video">
+								<em></em>
+								视频
+							</a>
+						</div>
+						-->
+					</div>
+				</li>
+				<!-- 直播 -->
+				<li class="ej li-lives">
+					<a href="http://live.leiphone.com" class="">
+						直播
+						<em class="point"></em>
+						<span class="arro"></span>
+					</a>
+					<div class="events-list" >
+						<div class="ls finished">
+							<div class="date">03/02 14:00</div>
+							<a class="title" href="http://live.leiphone.com/detail/33.html" target="_blank">硬创公开课Online——尝鲜HTC Vive</a>
+							<a href="http://live.leiphone.com/detail/33.html" class="status">精彩回顾</a>
+						</div>
+
+						<div class="ls finished">
+							<div class="date">02/24 14:00</div>
+							<a class="title" href="http://live.leiphone.com/detail/31.html" target="_blank">小米手机5发布会直播</a>
+							<a href="http://live.leiphone.com/detail/31.html" class="status">精彩回顾</a>
+						</div>
+
+						<div class="ls finished">
+							<div class="date">11/24 16:02</div>
+							<a class="title" href="http://live.leiphone.com/detail/29.html" target="_blank">vivo X6新品发布会</a>
+							<a href="http://live.leiphone.com/detail/29.html" class="status">精彩回顾</a>
+						</div>
+
+						<a href="http://live.leiphone.com" class="more-lives" target="_blank">查看更多&gt;</a>
+					</div>
+				</li>
+
+				<li class="li-product ">
+					<a href="http://product.leiphone.com" >产品</a>
+				</li>
+			</li>
+			<li class="li-tryout ">
+				<a href="http://tryout.leiphone.com" >试用</a>
+			</li>
+
+			<li class="">
+				<a href="http://gou.leiphone.com" class="" >极客购</a>
+			</li>
+
+			<!-- <li class="li-tryout ">
+			<a href="http://fuli.leiphone.com" class="" >福利</a>
+		</li>
+		-->
+		<li class="ej li-events ">
+			<a href="http://www.leiphone.com/events/list" class="">
+				活动
+				<em class="point"></em>
+				<span class="arro"></span>
+			</a>
+			<div class="events-list">
+				<div class="ls finished">
+					<a class="title" href="/events/index/unqiue/21.html" target="_blank">线下体验会：周六和一加X产品经理零距离搞机</a>
+					<span class="status">查看</span>
+					<div class="date">11月07日</div>
+				</div>
+				<div class="ls finished">
+					<a class="title" href="/events/index/unqiue/20.html" target="_blank">硬创公开课第七讲  10月24日北京约起来！</a>
+					<span class="status">查看</span>
+					<div class="date">10月24日</div>
+				</div>
+				<div class="ls finished">
+					<a class="title" href="/events/index/unqiue/17.html" target="_blank">硬创公开课“小课”《Founder's Speech》</a>
+					<span class="status">查看</span>
+					<div class="date">09月24日</div>
+				</div>
+				<a href="/events/list" class="more-events" target="_blank">更多活动</a>
+			</div>
+		</li>
+		<li class=" ">
+			<a href="http://k12.leiphone.com">k12</a>
+		</li>
+	</ul>
+</div>
+
+</div>
+</div>
+
+</nav>
+<nav class="yp-header-nav nav-fixed">
+<div class="nav_wrap">
+<div class="inner clr">
+<div class="yp-header-menu">
+	<span class="arrow"></span>
+	<ul>
+		<li class="active ">
+			<a href="http://www.leiphone.com">首页</a>
+		</li>
+
+		<li class="ej " data-dl="newsDl">
+			<a href="javascript:;" >
+				新闻
+				<span class="arro"></span>
+			</a>
+			<div class="news-menu">
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/faxian">发现</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/sponsor">业界</a>
+				</div>
+				<div class="dline">
+					<a href="http://www.leiphone.com/specials">专题</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/long">长文章</a>
+				</div>
+			</div>
+		</li>
+		<li class="">
+			<a href="http://maker.leiphone.com" >
+				硬创邦
+				<span class="arro"></span>
+			</a>
+			<div class="news-menu">
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/ingchuang">创客</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/naodong">脑洞</a>
+				</div>
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/chuangma">创马</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/diyer">DIY</a>
+				</div>
+			</div>
+		</li>
+
+		<li class="ej " data-dl="newsDl">
+			<a href="http://7.leiphone.com" >
+				爱搞机
+				<span class="arro"></span>
+			</a>
+			<div class="news-menu">
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/chai">评测</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/talks">机观</a>
+				</div>
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/science">科普</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/category/91chai">91拆</a>
+				</div>
+				<div class="dline">
+					<a href="http://www.leiphone.com/category/tiyan">体验</a>
+					<span>|</span>
+					<a href="http://www.leiphone.com/video">视频</a>
+				</div>
+				<!-- <div class="video-link">
+				<a href="http://www.leiphone.com/video">
+					<em></em>
+					视频
+				</a>
+			</div>
+			-->
+		</div>
+	</li>
+
+	<li class="ej li-lives">
+		<a href="http://live.leiphone.com" class="">
+			直播
+			<em class="point"></em>
+			<span class="arro"></span>
+		</a>
+		<div class="events-list" >
+			<div class="ls finished">
+				<div class="date">03/02 14:00</div>
+				<a class="title" href="http://live.leiphone.com/detail/33.html" target="_blank">硬创公开课Online——尝鲜HTC Vive</a>
+				<a href="http://live.leiphone.com/detail/33.html" class="status">精彩回顾</a>
+			</div>
+
+			<div class="ls finished">
+				<div class="date">02/24 14:00</div>
+				<a class="title" href="http://live.leiphone.com/detail/31.html" target="_blank">小米手机5发布会直播</a>
+				<a href="http://live.leiphone.com/detail/31.html" class="status">精彩回顾</a>
+			</div>
+
+			<div class="ls finished">
+				<div class="date">11/24 16:02</div>
+				<a class="title" href="http://live.leiphone.com/detail/29.html" target="_blank">vivo X6新品发布会</a>
+				<a href="http://live.leiphone.com/detail/29.html" class="status">精彩回顾</a>
+			</div>
+
+			<a href="http://live.leiphone.com" class="more-lives" target="_blank">查看更多&gt;</a>
+		</div>
+	</li>
+
+	<li class="li-product ">
+		<a href="http://product.leiphone.com" >产品</a>
+	</li>
+	<li class="li-tryout ">
+		<a href="http://tryout.leiphone.com" >试用</a>
+	</li>
+
+	<li class="">
+		<a href="http://gou.leiphone.com" class="" >极客购</a>
+	</li>
+
+	<li class="li-tryout ">
+		<a href="http://fuli.leiphone.com" class="" >福利</a>
+	</li>
+
+	<li class="ej li-events ">
+		<a href="http://www.leiphone.com/events/list" class="">
+			活动
+			<em class="point"></em>
+			<span class="arro"></span>
+		</a>
+		<div class="events-list">
+			<div class="ls finished">
+				<a class="title" href="/events/index/unqiue/21.html" target="_blank">线下体验会：周六和一加X产品经理零距离搞机</a>
+				<span class="status">查看</span>
+				<div class="date">11月07日</div>
+			</div>
+			<div class="ls finished">
+				<a class="title" href="/events/index/unqiue/20.html" target="_blank">硬创公开课第七讲  10月24日北京约起来！</a>
+				<span class="status">查看</span>
+				<div class="date">10月24日</div>
+			</div>
+			<div class="ls finished">
+				<a class="title" href="/events/index/unqiue/17.html" target="_blank">硬创公开课“小课”《Founder's Speech》</a>
+				<span class="status">查看</span>
+				<div class="date">09月24日</div>
+			</div>
+			<a href="/events/list" class="more-events" target="_blank">更多活动</a>
+		</div>
+	</li>
+	<li class=" ">
+		<a href="http://k12.leiphone.com">k12</a>
+	</li>
+</ul>
+</div>
+
+</div>
+</div>
+</nav>
+</header>
+
+</body>
+</html>

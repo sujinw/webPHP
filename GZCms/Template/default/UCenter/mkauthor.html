@@ -1,0 +1,115 @@
+<gzinclude file="../../../../Template/default/Common/ucheader.html">
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="animated fadeInRightBig">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>
+                        申请成为格子作者
+                        <small>请认真填写每一项，以便读者了解你！</small>
+                    </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link"> <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#"> <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="form_basic.html#">选项1</a>
+                            </li>
+                            <li>
+                                <a href="form_basic.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <form id="commentForm" action="<gz$smarty.const.__APP__>?m=index&c=ucenter&a=mkauthor" method="post">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">笔名：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="pen_name" class="form-control" placeholder="请输入您的笔名">
+                                    <span class="help-block m-b-none"></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">爱好：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="hobby" class="form-control" placeholder="请输入爱好">
+                                    <span class="help-block m-b-none"></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">喜欢的颜色：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="like_color" class="form-control" placeholder="请输入喜欢的颜色">
+                                    <span class="help-block m-b-none"></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">喜欢的运动：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="like_sport" class="form-control" placeholder="请输入喜欢的运动">
+                                    <span class="help-block m-b-none">说明文字</span>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">简介：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="self_des" class="form-control" placeholder="请输入简介">
+                                    <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/jquery.min.js?v=2.1.4"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/bootstrap.min.js?v=3.3.5"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/content.min.js?v=1.0.0"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/jquery-ui-1.10.4.min.js"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/validate/jquery.validate.min.js"></script>
+        <script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/validate/messages_zh.min.js"></script>
+<script>
+$().ready(function(){
+var e = "<i class='fa fa-times-circle'></i> ";
+
+$("#commentForm").validate({
+    rules: {
+        pen_name: {
+            remote: {
+                url: "index.php?m=index&c=ucenter&a=mkauthor",     //后台处理程序
+                type: "post",               //数据发送方式
+                data: {                     //要传递的数据
+                    pen_name: $("input[name='pen_name']").val()
+                }
+            },
+            required:true
+        },
+        self_des: "required",
+        hobby:"required"
+    },
+    messages: {
+        pen_name: {required:e + "请输入笔名",remote:"笔名已经存在"},
+        title: e + "请输入个人简介",
+        content: e + "请输入爱好"
+    }   
+});
+});
+</script>

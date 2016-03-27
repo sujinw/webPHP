@@ -1,0 +1,39 @@
+<gzinclude file="../Common/inc/head.html">
+	<section>
+		<div class="page_title">
+			<h2 class="fl">文章列表</h2>
+			<a href="<gzphp>echo U('Article/addArticle');<gz/php>" class="fr top_rt_btn">添加文章</a>
+		</div>
+		<table class="table">
+			<tr>
+				<th style="width:5%">id</th>
+				<th style="width:10%">缩略图</th>
+				<th style="width:30%">标题</th>
+				<th style="width:10%">作者</th>
+				<th style="width:10%">所属分类</th>
+				<th style="width:5%">是否推荐</th>
+				<th style="width:5%">点击次数</th>
+				<th style="width:10%">发表时间</th>
+				<th style="width:15%">操作</th>
+			</tr>
+			<gz foreach from=$article item=v>
+			<tr>
+				<td><gz$v.aid></td>
+				<td><img style="height:80px;width:80px" src="<gz$v.thumb>" /></td>
+				<td><gz$v.title></td>
+				<td><gz$v.author></td>
+				<td><gz$v.cname></td>
+				<td><gzif $v.recommend eq 1>是<gzelse>否<gz/if></td>
+				<td><gz$v.hits></td>
+				<td><gz$v.create_time|date_format:'%Y-%m-%d'></td>
+				<td>
+					<a href="<gz$smarty.const.__APP__>?m=admin&c=article&a=edit&aid=<gz$v.aid>" class="inner_btn">编辑</a>
+					<a href="javascript:;" onClick="del(<gz$v.aid>)" class="inner_btn">删除</a>
+				</td>
+			</tr>
+			<gz /foreach>		
+		</table>
+		<aside class="paging">
+			<gz$page>
+		</aside>
+	</section>

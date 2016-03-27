@@ -1,0 +1,205 @@
+<gzinclude file="../../../../Template/default/Common/ucheader.html">
+<body class="gray-bg">
+<link rel="stylesheet" type="text/css" href="<gz$smarty.const.__ZPUBLIC__>/wangEditor/css/wangEditor.min.css">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content mailbox-content">
+                        <div class="file-manager">
+                            <a class="btn btn-block btn-primary compose-mail" href="mail_compose.html">写信</a>
+                            <div class="space-25"></div>
+                            <h5>文件夹</h5>
+                            <ul class="folder-list m-b-md" style="padding: 0">
+                                <li>
+                                    <a href="mailbox.html"> <i class="fa fa-inbox "></i> 收件箱 <span class="label label-warning pull-right" id="mailnum"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailbox.html"> <i class="fa fa-envelope-o"></i> 发信</a>
+                                </li>
+                                <li>
+                                    <a href="mailbox.html"> <i class="fa fa-certificate"></i> 重要</a>
+                                </li>
+                                <li>
+                                    <a href="mailbox.html"> <i class="fa fa-file-text-o"></i> 草稿 <span class="label label-danger pull-right">2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailbox.html"> <i class="fa fa-trash-o"></i> 垃圾箱</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9 animated fadeInRight">
+                <div class="mail-box-header">
+                    <div class="pull-right tooltip-demo">
+                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="存为草稿"><i class="fa fa-pencil"></i> 存为草稿</a>
+                        <a href="mailbox.html" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="放弃"><i class="fa fa-times"></i> 放弃</a>
+                    </div>
+                    <h2>
+                    写信
+                </h2>
+                </div>
+                <div class="mail-box">
+	                <form action="<gz$smarty.const.__APP__>?m=index&c=ucenter&a=mailcompose&uid=<gz$uid>" class="form-horizontal" method="post" id="commentForm">
+	                    <div class="mail-body">
+	                            <div class="form-group">
+	                                <label class="col-sm-2 control-label">发送到：</label>
+
+	                                <div class="col-sm-10">
+	                                    <input type="text" name="to_uid" class="form-control" value="" aria-required="true">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label class="col-sm-2 control-label">主题：</label>
+
+	                                <div class="col-sm-10">
+	                                    <input type="text" name="title" class="form-control" value="" aria-required="true">
+	                                </div>
+	                            </div>
+	                    </div>
+
+	                    <div class="mail-text h-200">
+
+	                        <div class="summernote">
+	                        <textarea id="sendmail" name="content" style="height:400px;" aria-required="true">
+	                            <h2>H+ 后台主题</h2>
+	                            <p>H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本，当然，也集成了很多功能强大，用途广泛的国内外jQuery插件及其他组件，她可以用于所有的Web应用程序，如<b>网站管理后台</b>，<b>网站会员中心</b>，<b>CMS</b>，<b>CRM</b>，<b>OA</b>等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+	                            <p>
+	                                <b>当前版本：</b>v4.0.0
+	                            </p>
+	                            <p>
+	                                <b>定价：</b><span class="label label-warning">&yen;988（不开发票）</span>
+	                            </p>
+							</textarea>
+	                        </div>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                    <div class="mail-body text-right tooltip-demo">
+	                    	<button type="submit" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send"><i class="fa fa-reply"></i> 发送</button>
+	                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 放弃</a>
+	                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 存为草稿</a>
+	                    </div>
+	                    <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="<gz$smarty.const.__ZPUBLIC__>/wangEditor/js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<gz$smarty.const.__ZPUBLIC__>/wangEditor/js/wangEditor.min.js"></script>
+<script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="<gz$smarty.const.__TPUBLIC__>/js/plugins/validate/messages_zh.min.js"></script>
+<script type="text/javascript">
+    var editor = new wangEditor('sendmail');
+    // 表情
+    editor.config.emotions = {
+        'default': {
+            title: '默认',  // 分组的标题
+            size: 18,  // 表情图标的尺寸
+            imgs: [
+                // 每个表情图标的url地址
+				'Template/Public/wangEditor/static/emotions/default/1.gif',
+				'Template/Public/wangEditor/static/emotions/default/2.gif',
+				'Template/Public/wangEditor/static/emotions/default/3.gif',
+				'Template/Public/wangEditor/static/emotions/default/4.gif',
+				'Template/Public/wangEditor/static/emotions/default/5.gif',
+				'Template/Public/wangEditor/static/emotions/default/6.gif',
+				'Template/Public/wangEditor/static/emotions/default/7.gif',
+				'Template/Public/wangEditor/static/emotions/default/8.gif',
+				'Template/Public/wangEditor/static/emotions/default/9.gif',
+				'Template/Public/wangEditor/static/emotions/default/10.gif',
+				'Template/Public/wangEditor/static/emotions/default/11.gif',
+				'Template/Public/wangEditor/static/emotions/default/12.gif',
+				'Template/Public/wangEditor/static/emotions/default/13.gif',
+				'Template/Public/wangEditor/static/emotions/default/14.gif',
+				'Template/Public/wangEditor/static/emotions/default/15.gif',
+				'Template/Public/wangEditor/static/emotions/default/16.gif',
+				'Template/Public/wangEditor/static/emotions/default/17.gif',
+				'Template/Public/wangEditor/static/emotions/default/18.gif',
+				'Template/Public/wangEditor/static/emotions/default/19.gif',
+				'Template/Public/wangEditor/static/emotions/default/20.gif',
+				'Template/Public/wangEditor/static/emotions/default/21.gif',
+				'Template/Public/wangEditor/static/emotions/default/22.gif',
+				'Template/Public/wangEditor/static/emotions/default/23.gif',
+				'Template/Public/wangEditor/static/emotions/default/24.gif',
+				'Template/Public/wangEditor/static/emotions/default/25.gif',
+				'Template/Public/wangEditor/static/emotions/default/26.gif',
+				'Template/Public/wangEditor/static/emotions/default/27.gif',
+				'Template/Public/wangEditor/static/emotions/default/28.gif',
+				'Template/Public/wangEditor/static/emotions/default/29.gif',
+				'Template/Public/wangEditor/static/emotions/default/30.gif',
+				'Template/Public/wangEditor/static/emotions/default/31.gif',
+				'Template/Public/wangEditor/static/emotions/default/32.gif',
+				'Template/Public/wangEditor/static/emotions/default/33.gif',
+				'Template/Public/wangEditor/static/emotions/default/34.gif',
+				'Template/Public/wangEditor/static/emotions/default/35.gif',
+				'Template/Public/wangEditor/static/emotions/default/36.gif',
+				'Template/Public/wangEditor/static/emotions/default/37.gif',
+				'Template/Public/wangEditor/static/emotions/default/38.gif',
+				'Template/Public/wangEditor/static/emotions/default/39.gif',
+				'Template/Public/wangEditor/static/emotions/default/40.gif',
+				'Template/Public/wangEditor/static/emotions/default/41.gif',
+				'Template/Public/wangEditor/static/emotions/default/42.gif',
+				'Template/Public/wangEditor/static/emotions/default/43.gif',
+				'Template/Public/wangEditor/static/emotions/default/44.gif',
+				'Template/Public/wangEditor/static/emotions/default/45.gif',
+				'Template/Public/wangEditor/static/emotions/default/46.gif',
+				'Template/Public/wangEditor/static/emotions/default/47.gif',
+				'Template/Public/wangEditor/static/emotions/default/48.gif',
+				'Template/Public/wangEditor/static/emotions/default/49.gif',
+				'Template/Public/wangEditor/static/emotions/default/50.gif'
+             ]
+        },
+        'jinxing': {
+            title: '金星',  // 分组的标题
+            size: 50,  // 表情图标的尺寸
+            imgs: [
+                // 每个表情图标的url地址
+                'Template/Public/wangEditor/static/emotions/jinxing/1.gif',
+                'Template/Public/wangEditor/static/emotions/jinxing/2.gif',
+                'Template/Public/wangEditor/static/emotions/jinxing/3.gif',
+                'Template/Public/wangEditor/static/emotions/jinxing/4.gif',
+                'Template/Public/wangEditor/static/emotions/jinxing/5.gif',
+                'Template/Public/wangEditor/static/emotions/jinxing/6.gif'
+            ]
+        }
+    };
+    editor.create();
+
+</script>
+	<script>
+$().ready(function(){
+		var e = "<i class='fa fa-times-circle'></i> ";
+
+	$("#commentForm").validate({
+		rules: {
+			to_uid: "required",
+			title: "required",
+			content:"required"
+		},
+		messages: {
+			to_uid: e + "请输入收件人ID",
+			title: e + "请输入信息标题",
+			content: e + "请输入信息内容"
+		}	
+	});
+
+	$.ajax({
+            url:'index.php?m=index&c=message&a=ajaxnread',
+            type:"POST",
+            data:{'uid':<gz$uid>},
+            success:function(data){
+                $('#mailnum').text(data);
+                // $('#message').text(data);
+            }
+        });
+    })
+
+})
+
+	</script>

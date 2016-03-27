@@ -1,0 +1,100 @@
+<gzinclude file="../Common/inc/head.html">
+ <section>
+      <h2><strong style="color:grey;">添加前台模板风格</strong></h2>
+      <ul class="ulColumn2">
+      	<form name="adduser" id="adduser" action="<gzphp>echo U('addTemplate')<gz/php>" method="post" enctype='multipart/form-data'>
+       <li>
+        <span class="item_name" style="width:120px;">模板名称</span>
+        <input type="text" name="tname" id="username" class="textbox textbox_295" placeholder="模板名称" />
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">模板描述</span>
+        <input type="text" name="tremark" id="username" class="textbox textbox_295" placeholder="模板描述" />
+       </li>
+       <li>
+        <span class="item_name" style="width:120px;">模板的唯一标记</span> 
+        <input type="text" name="tsign" class="textbox textbox_295" placeholder="6~32位的英文和数字"/>       
+       </li> 
+       <li>
+        <span class="item_name" style="width:120px;">模板版本</span>
+        <input type="text" name="tversion" id="username" class="textbox textbox_295" placeholder="模板版本" />
+       </li> 
+       <li>
+        <span class="item_name" style="width:120px;">模板配置文件路径</span>
+        <input type="text" name="tconfig" id="username" class="textbox textbox_295" placeholder="模板配置文件路径" />
+       </li>     
+       <li>
+        <span class="item_name" style="width:120px;">模板作者</span>
+        <input type="text" name="tauthor" id="username" class="textbox textbox_295" placeholder="模板作者" />
+       </li> 
+       <li>
+        <span class="item_name" style="width:120px;">版权说明</span>
+        <textarea placeholder="版权说明" name="tcopyright" class="textarea" style="width:400px;height:50px;"></textarea>
+       </li><li>
+        <span class="item_name" style="width:120px;">模板缩略图</span>
+        <label class="uploadImg">
+         <input type="file" id="user_img" name="thumb" />
+         <span>上传头像</span>
+         <div id="imgdiv"><img id="imgShow" width="100" height="100" /></div>
+        </label>
+        
+       </li>
+       
+       <li>
+        <span class="item_name" style="width:120px;"></span>
+        <input type="submit" class="link_btn">
+       </li>
+       </form>
+      </ul>
+     </section>
+<script>
+$(function(){
+  $("#adduser").validate({
+    tname:{
+      rule:{
+        required: true,
+        ajax:{
+          url:"index.php?m=admin&c=template&a=ajaxtemplate",
+          // data:{'username':$('#username').val()}
+        }
+    },
+      error:{
+        required: " 名称不能为空 ",
+        ajax: " 名称已经存在 ",
+      }
+    },
+    tsign:{
+      rule:{
+        required: true,
+        regexp:/^\w{6,32}$/,
+        ajax:{
+          url:"index.php?m=admin&c=template&a=ajaxtemplate",
+          // data:{'username':$('#username').val()}
+        }
+      },
+      error:{
+        required:"唯一标识不能为空",
+        regexp:"唯一标识为6-16位的数字字母下划线"
+      }
+    },
+    tconfig:{
+      rule:{
+        required: true
+      },
+      error:{
+        required:"配置文件路径不能为空",
+      }
+    },
+    tversion:{
+      rule:{required: true},
+      error:{
+        required:"版本不能为空",
+      }
+    }
+
+  })
+
+   new uploadPreview({ UpBtn: "user_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+})
+
+</script>

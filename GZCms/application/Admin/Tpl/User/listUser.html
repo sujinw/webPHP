@@ -1,0 +1,37 @@
+<gzinclude file="../Common/inc/head.html">
+     <section>
+      <div class="page_title">
+       <h2 class="fl">格子会员列表</h2>
+       <a href="<gzphp>echo U('Admin/User/addUser')<gz/php>" class="fr top_rt_btn">添加新会员</a>
+      </div>
+      <table class="table">
+       <tr>
+        <th>id</th>
+        <th>用户名</th>
+        <th>昵称</th>
+        <th>用户等级</th>
+        <th>是否锁定</th>
+        <th>是否原创作者</th>
+        <th>注册时间</th>
+        <th>操作</th>
+       </tr>
+       <gzforeach from=$user item=v>
+       <tr style="text-align: center">
+        <td><gz$v.id></td>
+        <td><gz$v.username></td>
+        <td><gz$v.nickname></td>
+        <td><gz$v.lever></td>
+        <td><gzif $v.is_lock eq 0>否<gz else>是<gz/if></td>
+        <td><gzif $v.is_author eq 0>否<gz else>是<gz/if></td>
+        <td><gz$v.create_time|date_format:'%Y-%m-%d'></td>
+        <td>
+         <a href="#" class="inner_btn">编辑</a>
+         <a href="#" class="inner_btn">删除</a>
+        </td>
+       </tr>
+       <gz/foreach>
+      </table>
+      <aside class="paging">
+       <gz$page>
+      </aside>
+     </section>
