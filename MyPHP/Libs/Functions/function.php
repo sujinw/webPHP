@@ -60,6 +60,7 @@ function C($var = NULL, $value = NULL){
 }
 
 function go($url, $time = 0, $msg = ''){
+    // echo $url;die;
 	if(!headers_sent()){
 		$time == 0 ? header("Location:". $url) : header("Refresh:{$time},url=".$url);
 		die($msg);
@@ -461,7 +462,7 @@ function date_before($time, $unit = null)
 }
 /**
  * 根据配置文件的URL参数重新生成URL地址
- * @param String $path 访问url
+ * @param String $path 访问url Admin/Index/index(admin模块下的index控制器下的index方法)
  * @param array $args GET参数
  *                     <code>
  *                     $args = "nid=2&cid=1"
@@ -469,9 +470,22 @@ function date_before($time, $unit = null)
  *                     </code>
  * @return string
  */
-function U($path, $args = array())
-{
-    return Route::getUrl($path, $args);
+function U($path, $args = array()){
+    $pArr = explode('/',$path);
+    $url = "";
+    if(!empty($args)){
+        foreach ($args as $key => $value) {
+            $url .= '&'.$key .'='.$value.'&';
+        }   
+    }
+    if(count($pArr) == 3){
+        $u = "m=".$pArr[0].'&c='.$pArr[1].'&a='.$pArr[2].rtrim($url,'&');
+    }else if(count($pArr) == 2){
+        $u = "m=" . MODULE . '&c='.$pArr[0].'&a='.$pArr[1].rtrim($url,'&');
+    }else{
+        $u = "m=" . MODULE . '&c='.CONTROLLER.'&a='.$path.rtrim($url,'&');
+    }
+    return __APP__.'?'.$u; 
 }
 /**
 * 返回数组的维度
@@ -563,6 +577,63 @@ function session($name = '', $value = '')
             unset($_SESSION[$name]);
     } else { //设置session
         $_SESSION[$name] = $value;
+    }
+}
+
+/**
+ * cookie处理
+ * @param        $name   名称
+ * @param string $value 值
+ * @param mixed $option 选项
+ * @return mixed
+ */
+function cookie($name, $value = '', $option = array())
+{
+    // 默认设置
+    $config = array('prefix' => C('COOKIE_PREFIX'), // cookie 名称前缀
+        'expire' => C('COOKIE_EXPIRE'), // cookie 保存时间
+        'path' => C('COOKIE_PATH'), // cookie 保存路径
+        'domain' => C('COOKIE_DOMAIN'), // cookie 有效域名
+    );
+    // 参数设置(会覆盖黙认设置)
+    if (!empty($option)) {
+        if (is_numeric($option))
+            $option = array('expire' => $option);
+        elseif (is_string($option))
+            parse_str($option, $option);
+        $config = array_merge($config, array_change_key_case($option));
+    }
+    // 清除指定前缀的所有cookie
+    if (is_null($name)) {
+        if (empty($_COOKIE)) return;
+        // 要删除的cookie前缀，不指定则删除config设置的指定前缀
+        $prefix = empty($value) ? $config['prefix'] : $value;
+        if (!empty($prefix)) { // 如果前缀为空字符串将不作处理直接返回
+            foreach ($_COOKIE as $key => $val) {
+                if (0 === stripos($key, $prefix)) {
+                    setcookie($key, '', time() - 3600, $config['path'], $config['domain']);
+                    unset($_COOKIE[$key]);
+                }
+            }
+        }
+        return $_COOKIE;
+    }
+    $name = $config['prefix'] . $name;
+    if ('' === $value) {
+        // 获取指定Cookie
+        return isset($_COOKIE[$name]) ? json_decode(MAGIC_QUOTES_GPC ? stripslashes($_COOKIE[$name]) : $_COOKIE[$name]) : null;
+    } else {
+        if (is_null($value)) {
+            setcookie($name, '', time() - 3600, $config['path'], $config['domain']);
+            unset($_COOKIE[$name]);
+            // 删除指定cookie
+        } else {
+            // 设置cookie
+            $value = json_encode($value);
+            $expire = !empty($config['expire']) ? time() + intval($config['expire']) : 0;
+            setcookie($name, $value, $expire, $config['path'], $config['domain']);
+            $_COOKIE[$name] = $value;
+        }
     }
 }
 /**

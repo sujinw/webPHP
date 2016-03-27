@@ -21,7 +21,7 @@ class Page{
      
     protected  $ajax_func_name;
      
-    public     $plus = 3;         //分页偏移量
+    public     $plus = 2;         //分页偏移量
      
     protected  $url;
      
@@ -306,6 +306,40 @@ class Page{
         }
          $return .= '</select>';
         return $return;
+    }
+
+    /**
+     * [show_4 description]
+     * @Author   Rukic
+     * @DateTime 2016-01-28T17:08:14+0800
+     * 第一页 上一页 1 2 3 … 1004 下一页 最后一页
+     * @return   [type]                   [description]
+     */
+    public function show_4(){
+        $fpage = $this->first_page();   //第一页
+        $epage = $this->last_page();    //最后一页
+        $pre   = $this->up_page();      //上一页
+        $next  = $this->down_page();    //下一页
+
+        $plus = $this->plus;
+        if( $plus + $this->now_page > $this->total_pages)
+        {
+            $begin = $this->total_pages - $plus * 2;
+        }else{
+            $begin = $this->now_page - $plus;
+        }
+         
+        $begin = ($begin >= 1) ? $begin : 1;
+        $return = '';
+        $return .= $this->first_page();
+        $return .= $this->up_page();
+
+        p($return);
+
+
+
+
+
     }
 }
 ?>

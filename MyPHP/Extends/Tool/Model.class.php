@@ -160,10 +160,11 @@ class Model{
 	}
 	/**
 	 * [limit 根据limit条件查询]
-	 * @param  [type] $limit [description]
+	 * @param  [type] $limit [1,2]
 	 * @return [type]        [description]
 	 */
 	public function limit($limit){
+
 		$this->opt['limit'] = " LIMIT " . $limit;
 		return $this;
 	}
@@ -173,6 +174,7 @@ class Model{
 	 * @return [type]      [description]
 	 */
 	public function exe($sql){
+		// p($sql);
 		self::$sqls[] = $sql;
 		$link = self::$link;
 		$bool = $link->query($sql);
@@ -259,6 +261,7 @@ class Model{
 
 		// update hd_message set `nickname`='kuaixue',content='快学' where mid=13;
 		$sql = "UPDATE " . $this->table . " SET " . $fields . $this->opt['where'];
+		// p($sql);
 		return $this->exe($sql);
 	}
 }

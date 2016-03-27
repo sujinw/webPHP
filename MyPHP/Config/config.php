@@ -27,8 +27,8 @@ return array(
 	/*=============================================================
 	smarty配置*/
 	"SMARTY_ON"      => true,
-	"LEFT_DELIMITER" => '{#',
-	"RIGHT_DELIMITER"=> '#}',
+	"LEFT_DELIMITER" => '<gz',
+	"RIGHT_DELIMITER"=> '>',
 	"CACHE_ON"       => false,
 	"CACHE_TIME"     => 0,
 	/*=============================================================
@@ -87,4 +87,17 @@ return array(
     'USER_AUTH_KEY'                 =>'uid',        //用户认证识别号
     'NOT_AUTH_MODULE'               =>"",          //无需验证的控制器
     'NOT_AUTH_ACTION'               =>"",           //无需认证的动作方法
+/********************************文件上传********************************/
+    'UPLOAD_THUMB_ON'               => false,       //上传图片缩略图处理
+    'UPLOAD_ALLOW_TYPE'             => array('jpg','jpeg','gif','png','zip','rar','doc','txt'),//允许上传类型
+    'UPLOAD_ALLOW_SIZE'             => 4194304,     //允许上传文件大小 单位B
+    'UPLOAD_PATH'                   => 'Upload/',   //上传路径
+/********************************COOKIE********************************/
+    'COOKIE_EXPIRE'                 => 0,           // Coodie有效期
+    'COOKIE_DOMAIN'                 => '',          // Cookie有效域名
+    'COOKIE_PATH'                   => '/',         // Cookie路径
+    'COOKIE_PREFIX'                 => '',          // Cookie前缀 避免冲突
+
+
+
 );
