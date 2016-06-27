@@ -1,38 +1,35 @@
 <?php
-
 /**
  * 框架配置项
  */
 return array(
-	"DEFAULT_TIMES_ZONE" => "PRC",
-	"SESSION_AUTO_START" => true,
-	"VAR_CONTROLLER"     => "c",
-	"VAR_ACTION"         => "a",
-	"SAVE_LOG"           => true,
-	"AUTO_LOAD_FILE"     => array(),
-	"ERROR_URL"          => '',
-	"ERROR_MSG"          =>'网站出错了。。。请稍后再试',
-
-	/*===========================================================
-	数据库连接相关配置*/
-	'DB_CHARSET'	=>	'utf8',
-	'DB_HOST'		=>	'127.0.0.1',
-	'DB_PORT'		=>  3306,
-	'DB_USER'		=> 'root',
-	'DB_PASSWORD'	=> '',
-	'DB_DATABASE'	=> '',
-	'DB_PREFIX'		=> '',
+    "DEFAULT_TIMES_ZONE" => "PRC",
+    "SESSION_AUTO_START" => true,
+    "VAR_CONTROLLER"     => "c",
+    "VAR_ACTION"         => "a",
+    "SAVE_LOG"           => true,
+    "AUTO_LOAD_FILE"     => array(),
+    "ERROR_URL"          => '',
+    "ERROR_MSG"          =>'网站出错了。。。请稍后再试',
+    /*===========================================================
+    数据库连接相关配置*/
+    'DB_CHARSET'    =>  'utf8',
+    'DB_HOST'       =>  '127.0.0.1',
+    'DB_PORT'       =>  3306,
+    'DB_USER'       => 'root',
+    'DB_PASSWORD'   => '',
+    'DB_DATABASE'   => '',
+    'DB_PREFIX'     => '',
     'DB_DEBUG'              =>  true, // 开启调试模式 记录SQL日志
-
-	/*=============================================================
-	smarty配置*/
-	"SMARTY_ON"      => true,
-	"LEFT_DELIMITER" => '{#',
-	"RIGHT_DELIMITER"=> '#}',
-	"CACHE_ON"       => false,
-	"CACHE_TIME"     => 0,
-	/*=============================================================
-	验证码配置*/
+    /*=============================================================
+    smarty配置*/
+    "SMARTY_ON"      => true,
+    "LEFT_DELIMITER" => '<gz',
+    "RIGHT_DELIMITER"=> '>',
+    "CACHE_ON"       => false,
+    "CACHE_TIME"     => 3200,
+    /*=============================================================
+    验证码配置*/
     'CODE_FONT'                     => MYPHP_DATA_PATH . '/Font/font.ttf', //字体
     'CODE_STR'                      => '23456789abcdefghjkmnpqrstuvwsyz', //验证码种子
     'CODE_WIDTH'                    => 120,         //宽度
@@ -42,9 +39,14 @@ return array(
     'CODE_FONT_SIZE'                => 20,          //字体大小
     'CODE_FONT_COLOR'               => '',   //字体颜色
     /********************************URL设置********************************/
+
+    'VAR_MODULE'                    => 'm',
+    'VAR_CONTROLLER'                => 'c',
+    'VAR_ACTION'                    =>'a',
+    'URL_MODEL'                      =>'1',
     'HTTPS'                         => FALSE,       //基于https协议
     'URL_REWRITE'                   => FALSE,       //url重写模式
-    'URL_TYPE'                      => 2,           //类型 1:PATHINFO模式 2:普通模式 3:兼容模式
+    'URL_TYPE'                      => 1,           //类型 1:PATHINFO模式 2:普通模式 3:兼容模式
     'PATHINFO_DLI'                  => '/',         //URL分隔符 URL_TYPE为1、3时起效
     'PATHINFO_VAR'                  => 'q',         //兼容模式get变量
     'HTML_SUFFIX'                   => '',          //伪静态扩展名
@@ -87,4 +89,17 @@ return array(
     'USER_AUTH_KEY'                 =>'uid',        //用户认证识别号
     'NOT_AUTH_MODULE'               =>"",          //无需验证的控制器
     'NOT_AUTH_ACTION'               =>"",           //无需认证的动作方法
+/********************************文件上传********************************/
+    'UPLOAD_THUMB_ON'               => false,       //上传图片缩略图处理
+    'UPLOAD_ALLOW_TYPE'             => array('jpg','jpeg','gif','png','zip','rar','doc','txt'),//允许上传类型
+    'UPLOAD_ALLOW_SIZE'             => 4194304,     //允许上传文件大小 单位B
+    'UPLOAD_PATH'                   => 'Upload/',   //上传路径
+/********************************COOKIE********************************/
+    'COOKIE_EXPIRE'                 => 0,           // Coodie有效期
+    'COOKIE_DOMAIN'                 => '',          // Cookie有效域名
+    'COOKIE_PATH'                   => '/',         // Cookie路径
+    'COOKIE_PREFIX'                 => '',          // Cookie前缀 避免冲突
+    'CHECK_FILE_CASE'               => TRUE,//windows平台区分大小写
+/********************************COOKIE********************************/
+    "HOOK"                          => array(),
 );

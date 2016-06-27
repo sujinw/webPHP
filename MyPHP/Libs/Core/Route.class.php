@@ -1,4 +1,5 @@
 <?php
+
 /**
  * URL路由处理类
  * @package     Core
@@ -21,6 +22,7 @@ final class Route
         } else {
             $query = $_SERVER['QUERY_STRING'];
         }
+        
         //分析路由 && 清除伪静态后缀
         $url = self::parseRoute($query);
         //拆分后的GET变量
@@ -128,13 +130,13 @@ final class Route
         //完整URL地址
         defined('__URL__') or define("__URL__", __HOST__ . '/' . trim($_SERVER['REQUEST_URI'], '/'));
         //应用URL地址
-        defined('__APP__') or define("__APP__", __ROOT__ .'/'.APP_NAME);//. '/' . basename(APP_PATH)
+        defined('__APP__') or define("__APP__", __ROOT__ . '/' . basename(APP_PATH));
         //公共目录
         defined('__COMMON__') or define("__COMMON__", __APP__ . '/Common');
         //框架目录相关URL
-        defined('__HDPHP__') or define("__HDPHP__", __HOST__ . '/' . trim(str_ireplace(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']), "", HDPHP_PATH), '/'));
-        defined('__HDPHP_DATA__') or define("__HDPHP_DATA__", __HDPHP__ . '/Data');
-        defined('__HDPHP_EXTEND__') or define("__HDPHP_EXTEND__", __HDPHP__ . '/Extend');
+        defined('__MYPHP__') or define("__MYPHP__", __HOST__ . '/' . trim(str_ireplace(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']), "", MYPHP_PATH), '/'));
+        defined('__MYPHP_DATA__') or define("__MYPHP_DATA__", __MYPHP__ . '/Data');
+        defined('__MYPHP_EXTEND__') or define("__MYPHP_EXTEND__", __MYPHP__ . '/Extend');
         //应用
         defined('APP') or define('APP', basename(APP_PATH));
         //模块
@@ -465,4 +467,3 @@ final class Route
         }
     }
 }
-?>

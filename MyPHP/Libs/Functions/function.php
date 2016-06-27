@@ -1,10 +1,8 @@
 <?php
-
 /**
  * 框架公用函数文件
  *
  *===================================================*/
-
 /**
  * [p 框架内打印函数]
  * @AuthorHTL
@@ -13,17 +11,16 @@
  * @return    [type]                        [description]
  */
 function p($arr){
-	if(is_bool($arr)){
-		var_dump($arr);
-	}elseif(is_null($arr)){
-		var_dump(NULL);
-	}else{
-		echo "<pre style='padding:10px;font-size:16px;color:#333;background:honeydew;border:1px solid #DDD;border-radius:8px;'>";
-		print_r($arr);
-		echo "</pre>";
-	}
+    if(is_bool($arr)){
+        var_dump($arr);
+    }elseif(is_null($arr)){
+        var_dump(NULL);
+    }else{
+        echo "<pre style='padding:10px;font-size:16px;color:#333;background:honeydew;border:1px solid #DDD;border-radius:8px;'>";
+        print_r($arr);
+        echo "</pre>";
+    }
 }
-
 /**
  * [C 配置项函数]
  * @Author Rukic
@@ -34,39 +31,36 @@ function p($arr){
  * //4.读取所有的配置项      C();                 
  */
 function C($var = NULL, $value = NULL){
-	static $config = array();
-
-	//加载配置项
-	if(is_array($var)){
-		//把传过来的array和当前的array进行合并
-		$config = array_merge($config, array_change_key_case($var, CASE_UPPER));
-		return;
-	}
-
-	//读取或者动态改变配置项
-	if(is_string($var)){
-		$var = strtoupper($var);
-		if(!is_null($value)){
-			$config[$var] = $value;
-			return;
-		}
-		return isset($config[$var]) ? $config[$var] : NULL;
-	}
-
-	//返回所有配置项
-	if(is_null($var) && is_null($value)){
-		return $config;
-	}
+    static $config = array();
+    //加载配置项
+    if(is_array($var)){
+        //把传过来的array和当前的array进行合并
+        $config = array_merge($config, array_change_key_case($var, CASE_UPPER));
+        return;
+    }
+    //读取或者动态改变配置项
+    if(is_string($var)){
+        $var = strtoupper($var);
+        if(!is_null($value)){
+            $config[$var] = $value;
+            return;
+        }
+        return isset($config[$var]) ? $config[$var] : NULL;
+    }
+    //返回所有配置项
+    if(is_null($var) && is_null($value)){
+        return $config;
+    }
 }
-
 function go($url, $time = 0, $msg = ''){
-	if(!headers_sent()){
-		$time == 0 ? header("Location:". $url) : header("Refresh:{$time},url=".$url);
-		die($msg);
-	}else{
-		echo "<meta http-equiv='Refresh' content='{$time}, url='{$url}'";
-		if($time)die($msg);
-	}
+    // echo $url;die;
+    if(!headers_sent()){
+        $time == 0 ? header("Location:". $url) : header("Refresh:{$time},url=".$url);
+        die($msg);
+    }else{
+        echo "<meta http-equiv='Refresh' content='{$time}, url='{$url}'";
+        if($time)die($msg);
+    }
 }
 /**
  * [halt 终止]
@@ -75,54 +69,51 @@ function go($url, $time = 0, $msg = ''){
  * @return   [type]                   [description]
  */
 function halt($error, $level="ERROR",$type=3,$dest=NULL){
-	if(is_array($error)){
-		Log::write($error['message'],$level,$type,$dest);
-	}else{
-		Log::write($error,$level,$type,$dest);
-	}
-
-	$e = array();
-	//开启DEBUG
-	if(DEBUG){
-		if(!is_array($error)){
-			$trace = debug_backtrace(); //文件来源，追踪引导
-			$e['message'] = $error;
-			$e['file'] = $trace[0]['file'];
-			$e['line'] = $trace[0]['line'];
-			$e['class'] = isset($trace[0]['line']) ? $trace[0]['line'] : "";
-			$e['function'] = isset($trace[0]['function']) ? $trace[0]['function'] : "";
-
-			ob_start();
-			debug_print_backtrace();
-			$e['trace'] = htmlspecialchars(ob_get_clean());
-		}else{
-			$e = $error;
-		}
-	}else{
-		if($url = C('ERROR_URL')){
-			go($url);
-		}else{
-			$e['message'] = C('ERROR_MSG');
-		}
-	}
-
-	include MYPHP_TPL_PATH .'/halt.html';
-	die;
+    if(is_array($error)){
+        Log::write($error['message'],$level,$type,$dest);
+    }else{
+        Log::write($error,$level,$type,$dest);
+    }
+    $e = array();
+    //开启DEBUG
+    if(DEBUG){
+        if(!is_array($error)){
+            $trace = debug_backtrace(); //文件来源，追踪引导
+            $e['message'] = $error;
+            $e['file'] = $trace[0]['file'];
+            $e['line'] = $trace[0]['line'];
+            $e['class'] = isset($trace[0]['line']) ? $trace[0]['line'] : "";
+            $e['function'] = isset($trace[0]['function']) ? $trace[0]['function'] : "";
+            ob_start();
+            debug_print_backtrace();
+            $e['trace'] = htmlspecialchars(ob_get_clean());
+        }else{
+            $e = $error;
+        }
+    }else{
+        if($url = C('ERROR_URL')){
+            go($url);
+        }else{
+            $e['message'] = C('ERROR_MSG');
+        }
+    }
+    include MYPHP_TPL_PATH .'/halt.html';
+    die;
 }
 /**
  * [print_const 打印自定义常量]
  * @return [type] [description]
  */
 function print_const(){
-	$var = get_defined_constants(true);
-	p($var['user']);
+    $var = get_defined_constants(true);
+    p($var['user']);
 }
 /**
  * [M 实例化模型类]
  */
-function M($table){
-	$obj = new Model($table);
-	return $obj;
+function M($table=null){
+    $obj = new Model($table);
+    return $obj;
 }
 /**
  * 获得扩展模型
@@ -209,7 +200,7 @@ $agent = $_SERVER['HTTP_USER_AGENT'];
     {
       $os = 'Windows 7';
     }
-	  else if (preg_match('/win/i', $agent) && preg_match('/nt 6.2/i', $agent))
+      else if (preg_match('/win/i', $agent) && preg_match('/nt 6.2/i', $agent))
     {
       $os = 'Windows 8';
     }else if(preg_match('/win/i', $agent) && preg_match('/nt 10.0/i', $agent))
@@ -421,7 +412,6 @@ function encrypt($data, $key = null)
 {
     return encry::encrypt($data, $key);
 }
-
 /**
  * 解密方法
  * @param string $data 解密字符串
@@ -461,7 +451,7 @@ function date_before($time, $unit = null)
 }
 /**
  * 根据配置文件的URL参数重新生成URL地址
- * @param String $path 访问url
+ * @param String $path 访问url Admin/Index/index(admin模块下的index控制器下的index方法)
  * @param array $args GET参数
  *                     <code>
  *                     $args = "nid=2&cid=1"
@@ -469,9 +459,35 @@ function date_before($time, $unit = null)
  *                     </code>
  * @return string
  */
-function U($path, $args = array())
-{
-    return Route::getUrl($path, $args);
+function U($path, $args = array()){
+    $pArr = explode('/',$path);
+    p($pArr);
+    $urlstr = "";
+    if(C('URL_MODE') == 0){
+        $url = "";
+        if(!empty($args)){
+            foreach ($args as $key => $value) {
+                $url .= '&'.$key .'='.$value;
+            }   
+        }
+        if(count($pArr) == 3){
+            $u = "m=".$pArr[0].'&c='.$pArr[1].'&a='.$pArr[2].rtrim($url,'&');
+        }else if(count($pArr) == 2){
+            $u = "m=" . MODULE . '&c='.$pArr[0].'&a='.$pArr[1].rtrim($url,'&');
+        }else{
+            $u = "m=" . MODULE . '&c='.CONTROLLER.'&a='.$path.rtrim($url,'&');
+        }
+        $urlstr .= __APP__.'?'.$u;
+    }elseif(C('URL_MODE') == 1){
+        $url = $path;
+        if(!empty($args)){
+            foreach ($args as $key => $value) {
+                $url .= '/'.$key .'/'.$value;
+            }   
+        }
+       $urlstr = __ROOT__.'/'.$url;
+    }
+    return $urlstr;
 }
 /**
 * 返回数组的维度
@@ -566,6 +582,62 @@ function session($name = '', $value = '')
     }
 }
 /**
+ * cookie处理
+ * @param        $name   名称
+ * @param string $value 值
+ * @param mixed $option 选项
+ * @return mixed
+ */
+function cookie($name, $value = '', $option = array())
+{
+    // 默认设置
+    $config = array('prefix' => C('COOKIE_PREFIX'), // cookie 名称前缀
+        'expire' => C('COOKIE_EXPIRE'), // cookie 保存时间
+        'path' => C('COOKIE_PATH'), // cookie 保存路径
+        'domain' => C('COOKIE_DOMAIN'), // cookie 有效域名
+    );
+    // 参数设置(会覆盖黙认设置)
+    if (!empty($option)) {
+        if (is_numeric($option))
+            $option = array('expire' => $option);
+        elseif (is_string($option))
+            parse_str($option, $option);
+        $config = array_merge($config, array_change_key_case($option));
+    }
+    // 清除指定前缀的所有cookie
+    if (is_null($name)) {
+        if (empty($_COOKIE)) return;
+        // 要删除的cookie前缀，不指定则删除config设置的指定前缀
+        $prefix = empty($value) ? $config['prefix'] : $value;
+        if (!empty($prefix)) { // 如果前缀为空字符串将不作处理直接返回
+            foreach ($_COOKIE as $key => $val) {
+                if (0 === stripos($key, $prefix)) {
+                    setcookie($key, '', time() - 3600, $config['path'], $config['domain']);
+                    unset($_COOKIE[$key]);
+                }
+            }
+        }
+        return $_COOKIE;
+    }
+    $name = $config['prefix'] . $name;
+    if ('' === $value) {
+        // 获取指定Cookie
+        return isset($_COOKIE[$name]) ? json_decode(MAGIC_QUOTES_GPC ? stripslashes($_COOKIE[$name]) : $_COOKIE[$name]) : null;
+    } else {
+        if (is_null($value)) {
+            setcookie($name, '', time() - 3600, $config['path'], $config['domain']);
+            unset($_COOKIE[$name]);
+            // 删除指定cookie
+        } else {
+            // 设置cookie
+            $value = json_encode($value);
+            $expire = !empty($config['expire']) ? time() + intval($config['expire']) : 0;
+            setcookie($name, $value, $expire, $config['path'], $config['domain']);
+            $_COOKIE[$name] = $value;
+        }
+    }
+}
+/**
  * 将数组中的值全部转为大写或小写
  * @param array $arr
  * @param int $type 类型 1值大写 0值小写
@@ -582,7 +654,6 @@ function array_change_value_case($arr, $type = 0)
             $newArr[$k] = $function($v);
         }
     }
-
     return $newArr;
 }
 /**
@@ -621,5 +692,61 @@ function array_change_key_case_d($arr, $type = 0)
 function error($error)
 {
     halt($error);
+}
+/**
+ * 加载文件并缓存
+ * @param null $path 导入的文件
+ * @return bool
+ */
+function require_cache($path = null)
+{
+    /**
+     * 文件缓存
+     */
+    static $_files = array();
+    /**
+     * 加载过的文件列表
+     */
+    if (is_null($path)) {
+        return $_files;
+    }
+
+    /**
+     * 已经加载过
+     */
+    if (isset($_files[$path])) {
+        return true;
+    }
+
+    /**
+     * 区分大小写的文件判断
+     */
+    if (!file_exists_case($path)) {
+        return false;
+    }
+    /**
+     * 加载文件并记录缓存
+     */
+    require_once($path);
+    $_files[$path] = true;
+    return true;
+}
+/**
+ * 区分大小写的判断文件判断
+ * @param string $file 需要判断的文件
+ * @return boolean
+ */
+function file_exists_case($file)
+{
+    if (is_file($file)) {
+        //windows环境下检测文件大小写
+        if (IS_WIN && C("CHECK_FILE_CASE")) {
+            if (basename(realpath($file)) != basename($file)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    return false;
 }
 ?>

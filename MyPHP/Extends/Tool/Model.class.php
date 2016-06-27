@@ -22,7 +22,6 @@ class Model{
 		//初始化sql信息
 		$this->_opt();
 	}
-
 	/**
 	 * [_connect 链接数据库]
 	 * @return [type] [description]
@@ -57,7 +56,8 @@ class Model{
 	public function count(){
 		$sql = "SELECT count(*) FROM ".$this->table;
 		$result = $this->query($sql);
-		return current($result)['count(*)'];
+		$res = current($result);
+		return $res['count(*)'];
 	}
 	/**
 	 * [query sql查询方法]
@@ -67,8 +67,8 @@ class Model{
 	public function query($sql){
 		self::$sqls[] = $sql;
 		$link = self::$link;
-		$result = $link->query($sql);
 		// echo $sql;//die;
+		$result = $link->query($sql);
 		if($link->errno)halt("mysql错误：".$link->error.'<br />SQL:'.$sql);//有错误则输出错误
 		$rows = array();
 		while ($row = $result->fetch_assoc()) {
@@ -84,8 +84,8 @@ class Model{
 	 */
 	public function all(){
 		// echo $this->table;die;
-		$sql = "SELECT " . $this->opt['field'] . " FROM " . $this->table . $this->opt['where'] . $this->opt['having']  . $this->opt['group']  . $this->opt['limit'];
-		// echo $sql;
+		$sql = "SELECT " . $this->opt['field'] . " FROM " . $this->table . $this->opt['where'] . $this->opt['having']  . $this->opt['group']  . $this->opt['order']. $this->opt['limit'];
+		//echo $sql;
 		return $this->query($sql);
 	}
 	/**
@@ -160,7 +160,7 @@ class Model{
 	}
 	/**
 	 * [limit 根据limit条件查询]
-	 * @param  [type] $limit [description]
+	 * @param  [type] $limit [1,2]
 	 * @return [type]        [description]
 	 */
 	public function limit($limit){
@@ -173,6 +173,7 @@ class Model{
 	 * @return [type]      [description]
 	 */
 	public function exe($sql){
+		// p($sql);
 		self::$sqls[] = $sql;
 		$link = self::$link;
 		$bool = $link->query($sql);
@@ -220,7 +221,6 @@ class Model{
 		}
 		$fields = trim($fields, ',');
 		$values = trim($values, ',');
-
 		$sql = "INSERT INTO " . $this->table . " (". $fields .") VALUES (". $values .")";
 		return $this->exe($sql);
 	}
@@ -256,9 +256,10 @@ class Model{
 			$fields .= "`" . $this->_safe_str($k) . "`='" . $this->_safe_str($v) ."',";
 		}
 		$fields = trim($fields, ',');
-
 		// update hd_message set `nickname`='kuaixue',content='快学' where mid=13;
+		// p($this->opt['where']);
 		$sql = "UPDATE " . $this->table . " SET " . $fields . $this->opt['where'];
+		// p($sql);die;
 		return $this->exe($sql);
 	}
 }

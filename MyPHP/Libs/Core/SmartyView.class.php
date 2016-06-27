@@ -10,13 +10,17 @@ class SmartyView {
 		if(!is_null(self::$smarty)) return;
 			$smarty = new Smarty();
 
-			$smarty->template_dir = APP_TPL_PATH . '/' . CONTROLLER .'/';		//模板目录
-			$smarty->compile_dir  = APP_COMPILE_PATH;							//模板编译目录
-			$smarty->cache_dir = APP_CACHE_PATH;								//模板缓存目录
-			$smarty->left_delimiter = C('LEFT_DELIMITER');						//左边界符号
-			$smarty->right_delimiter = C('RIGHT_DELIMITER');					//右边界符
-			$smarty->caching = C('CACHE_ON');									//缓存开启
-			$smarty->cache_lifetime = C('CACHE_TIME');							//缓存时间
+			$smarty->template_dir = ROOT_PATH.APP_PATH.'/'.MODULE.APP_TPL_PATH . '/' . CONTROLLER .'/';	//模板目录
+			$smarty->compile_dir  = APP_TEMP_PATH .'/Compile/'. MODULE. '/';//模板编译目录
+			$smarty->cache_dir 	  = APP_TEMP_PATH .'/Cache/'. MODULE. '/';//模板缓存目录
+			if(!file_exists($smarty->cache_dir)){
+				Dir::create($smarty->cache_dir);
+			}
+			$smarty->left_delimiter = C('LEFT_DELIMITER');												//左边界符号
+			$smarty->right_delimiter = C('RIGHT_DELIMITER');											//右边界符
+			$smarty->caching = C('CACHE_ON');															//缓存开启
+			$smarty->cache_lifetime = C('CACHE_TIME');													//缓存时间
+			// $smarty->allow_php_templates = true;
 			self::$smarty = $smarty;
 	}
 	protected function display($tpl){
@@ -31,6 +35,10 @@ class SmartyView {
 		$tpl = $this->get_tpl($tpl);
 		return self::$smarty->is_cached($tpl,$_SERVER['REQUEST_URI']);
 
+	}
+
+	public function registerPlu($name, $callback){
+		return self::$smarty->register_block($name,$callback); //注册block，这个就是应用标签的基础
 	}
 }
 ?>

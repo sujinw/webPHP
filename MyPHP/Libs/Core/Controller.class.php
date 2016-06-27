@@ -4,6 +4,7 @@
 */
 class Controller extends SmartyView{
 	public function __construct(){
+		Hook::listen('CONTROLLER_START');
 		if(C("SMARTY_ON")){
 			parent::__construct();
 		}
@@ -25,8 +26,8 @@ class Controller extends SmartyView{
 		if (IS_AJAX) {
             $this->ajax(array('status' => 1, 'message' => $msg));
         }else{
-			$url = $url ? 'window.location.href="'. $url .'"' : 'window.history.back(-1)';
-			include(APP_TPL_PATH .'/success.html');
+			$url = $url ? "window.location.href='". $url ."'" : 'window.history.back(-1)';
+			include(ROOT_PATH.APP_PATH.'/'.MODULE.APP_TPL_PATH .'/success.html');
 		}
 		exit;
 	}
@@ -40,8 +41,8 @@ class Controller extends SmartyView{
 		if (IS_AJAX) {
             $this->ajax(array('status' => 0, 'message' => $msg));
         }else{
-			$url = $url ? 'window.location.href="'. $url .'"' : 'window.history.back(-1)';
-			include(APP_TPL_PATH .'/error.html');
+			$url = $url ? "window.location.href='". $url ."'" : 'window.history.back(-1)';
+			include(ROOT_PATH.APP_PATH.'/'.MODULE.APP_TPL_PATH .'/error.html');
 
 		}
 		exit;
@@ -54,7 +55,7 @@ class Controller extends SmartyView{
 	 */
 	protected function notice($msg, $url = NULL, $time=3){
 		$url = $url ? 'window.location.href="'. $url .'"' : 'window.history.back(-1)';
-		include(APP_TPL_PATH .'/notice.html');
+		include(ROOT_PATH.APP_PATH.'/'.MODULE.APP_TPL_PATH .'/notice.html');
 	}
 	/**
 	 * [get_tpl 组合模板路径]
@@ -63,11 +64,11 @@ class Controller extends SmartyView{
 	 */
 	protected function get_tpl($tpl = NULL){
 		if(is_null($tpl)){
-			$path = APP_TPL_PATH .'/'. CONTROLLER .'/'. ACTION .'.html';
+			$path = ROOT_PATH.APP_PATH.'/'.MODULE.APP_TPL_PATH .'/'. CONTROLLER .'/'. ACTION .'.html';
 		}else{
 			$suffix = strrchr($tpl, '.');
 			$tpl = empty($suffix) ? $tpl . '.html' : $tpl;
-			$path = APP_TPL_PATH . '/' . CONTROLLER . '/' . $tpl;
+			$path = $tpl;
 		}
 		return $path;
 	}
@@ -77,6 +78,7 @@ class Controller extends SmartyView{
 	 * @return [type]      [description]
 	 */
 	protected function display($tpl = NULL){
+		Hook::listen("VIEW_START");
 		$path = $this->get_tpl($tpl);
 		if(!is_file($path)) halt($path . '模板文件不存在');
 
@@ -86,6 +88,7 @@ class Controller extends SmartyView{
 			extract($this->var);
 			include $path;
 		}
+		 Hook::listen("VIEW_START");
 	}
 	/**
 	 * [assign 变量赋值]
@@ -123,6 +126,14 @@ class Controller extends SmartyView{
         }
         echo $_data;
         exit;
+    }
+
+    /**
+     * 析构函数
+     */
+    public function __destruct()
+    {
+        Hook::listen('CONTROLLER_END');
     }
 }
 ?>

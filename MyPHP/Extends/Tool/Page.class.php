@@ -3,28 +3,17 @@
 * 分页插件
 */
 class Page{
-	public     $first_row;        //起始行数
- 
+    public     $first_row;        //起始行数
     public     $list_rows;        //列表每页显示行数
-     
     protected  $total_pages;      //总页数
- 
     protected  $total_rows;       //总行数
-     
     protected  $now_page;         //当前页数
-     
     protected  $method  = 'defalut'; //处理情况 Ajax分页 Html分页(静态化时) 普通get方式 
-     
     protected  $parameter = '';
-     
     protected  $page_name;        //分页参数的名称
-     
     protected  $ajax_func_name;
-     
-    public     $plus = 3;         //分页偏移量
-     
+    public     $plus = 2;         //分页偏移量
     protected  $url;
-     
      
     /**
      * 构造函数
@@ -306,6 +295,32 @@ class Page{
         }
          $return .= '</select>';
         return $return;
+    }
+    /**
+     * [show_4 description]
+     * @Author   Rukic
+     * @DateTime 2016-01-28T17:08:14+0800
+     * 第一页 上一页 1 2 3 … 1004 下一页 最后一页
+     * @return   [type]                   [description]
+     */
+    public function show_4(){
+        $fpage = $this->first_page();   //第一页
+        $epage = $this->last_page();    //最后一页
+        $pre   = $this->up_page();      //上一页
+        $next  = $this->down_page();    //下一页
+        $plus = $this->plus;
+        if( $plus + $this->now_page > $this->total_pages)
+        {
+            $begin = $this->total_pages - $plus * 2;
+        }else{
+            $begin = $this->now_page - $plus;
+        }
+         
+        $begin = ($begin >= 1) ? $begin : 1;
+        $return = '';
+        $return .= $this->first_page();
+        $return .= $this->up_page();
+        p($return);
     }
 }
 ?>
