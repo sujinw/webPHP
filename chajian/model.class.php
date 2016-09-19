@@ -3,14 +3,14 @@
 =========================DEMO++++++++++++++++++++++++
 include_once 'model.class.php';
 
-$mode = new Model(array(),'c');//第一个参数数据库配置文件，第二个传操作表的表名
+$model = new Model(array(),'c');//第一个参数数据库配置文件，第二个传操作表的表名
 //print_r($mode);
 	//insert
-	//$inserId = $mode->add(array('id'=>1,'user'=>'test'));//add添加一条传数组，添多条用addAll,传二维数组
+	//$inserId = $model->add(array('id'=>1,'user'=>'test'));//add添加一条传数组，添多条用addAll,传二维数组
  //print_r($inserId);
-	//$mode->all();     //all和findAll都是查找全部的数据
+	//$model->all();     //all和findAll都是查找全部的数据
 	
-	//$model->where(array('id'=1))->one();//查询一条
+	//$model->where(array('id'=>1))->one();//查询一条
 	//$model->field(array('id','user'))->where(array('user'=>'test')); // field[]填写需要查询的字段    where[]填写查询条件
 	
 	//$model->where(array())->delete()//删除记录。必须有where，为防止误操作
@@ -23,13 +23,39 @@ $mode = new Model(array(),'c');//第一个参数数据库配置文件，第二�
 	
 	//$model->field()->group()->order()->where()->limit();//完整的链式调用filed，where，都是传一个array，其他的都是传string，比如order就是传ORDER BY后面的字符串
 
-
-
-
-
 */
+$mode = new Model(array(),'c');
+$mode->where(array('id'=>1))->one();
+$mode->where(array('id'=>1))->find();
+
+$mode->addAll(array(
+	array(
+		'id'=>1,
+		"user"=>"2"
+	),
+	array(
+		'id'=>3,
+		"user"=>'22',
+	),
+	array(
+		'uid'=>'44',
+		'user'=>333
+	),
+));
+echo $mode->debug();//输出最后一条执行的sql
+
+$config = array();//可以把配置写到配置文件
+
+//数据库操作函数
+function M($table=null){
+	if(is_null($table))exit("没有表名");
+	return new Model($config,$table);
+}
+//仿think的    M('表名')->all();
 /**
  * 数据库模型类
+ * author salde
+ * updateTime 2016/09/19
  */
 class Model{
 	//保存链接信息
@@ -171,11 +197,19 @@ class Model{
 	}
 	/**
 	 * [where 根据where条件查询]
-	 * @param  [type] $where [description]
+	 * @param  [array] $where [description]
 	 * @return [type]        [description]
 	 */
-	public function where($where){
-		$this->opt['where'] = " WHERE ".$where;
+	public function where($where = array()){
+		if(count($where) == 0){
+			exit("请输入正确的where array");
+		}
+		$whStr = "";
+		foreach($where as $k=>$v){
+			$whStr .= "'".$k."'=".$v.",";
+		}
+		$str = trim($whStr,",");
+		$this->opt['where'] = " WHERE ".$str;
 		return $this;
 	}
 	/**
@@ -261,16 +295,29 @@ class Model{
 		$sql = "INSERT INTO " . $this->table . " (". $fields .") VALUES (". $values .")";
 		return $this->exe($sql);
 	}
+	//多条数据用多维数组，递归插入
 	public function addAll($data = NULL){
 		if(is_null($data)) $this->add();
 		if(arrayLevel($data) > 1){
+			$sqls = "";
 			foreach ($data as $v) {
 				if(arrayLevel($v) == 1){					
-					$result = $this->add($v);
+					//$result = $this->add($v);这等于轮询数据库，占用内存太多，优化如下
+					
+					$fields = '';
+					$values = '';
+					foreach($v as $k=>$e){
+						$fields .= '`' . $this->_safe_str($k) . '`,';
+						$values .= "'" . $this->_safe_str($v) . "',";
+					}
+					$fields = trim($fields, ',');
+					$values = trim($values, ',');
+					$sqls .= "INSERT INTO " . $this->table . " (". $fields .") VALUES (". $values .");";
 				}else{
-					$result = $this->addAll($v);
+					#$result = $this->addAll($v);
 				}
 			}
+			echo $sqls;die;
 		}else{
 			$result = $this->add($data);
 		}
@@ -291,6 +338,15 @@ class Model{
 		$fields = trim($fields, ',');
 		$sql = "UPDATE " . $this->table . " SET " . $fields . $this->opt['where'];
 		return $this->exe($sql);
+	}
+	/**
+	 * [debug 输出最后一条执行的sql]
+	 * @param  [array] $data [description]
+	 * @return [type]       [description]
+	 */
+	public function debug(){
+		//print_r(self::$sqls);
+		return self::$sqls[count(self::$sqls)-1];
 	}
 }
 ?>
